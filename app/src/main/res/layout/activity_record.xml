@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/page_root_view"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/relief_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="24dp">
+
+        <ImageButton
+            android:id="@+id/relief_back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/dancing_script"
+            android:text="Relief"
+            android:textColor="@color/_00_00_color"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/recording_indicator"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/relief_top_bar"
+            app:layout_constraintBottom_toTopOf="@id/relief_bottom_bar"
+            android:layout_margin="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_recording"
+            android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/cassette_normal"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="55dp"
+        app:layout_constraintTop_toBottomOf="@id/relief_top_bar"
+        app:layout_constraintBottom_toTopOf="@id/relief_bottom_bar"
+        android:layout_margin="40dp"
+        android:src="@drawable/cassette_normal"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+            android:id="@+id/cassette_broken"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="55dp"
+            app:layout_constraintTop_toBottomOf="@id/relief_top_bar"
+            app:layout_constraintBottom_toTopOf="@id/relief_bottom_bar"
+            android:layout_margin="40dp"
+            android:src="@drawable/cassette_broken"
+            android:scaleType="fitCenter"/>
+
+
+    <LinearLayout
+            android:id="@+id/relief_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/pause_button"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_pause_24"
+            android:tint="#2679CF"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+                android:id="@+id/record_button"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_record"
+                android:tint="#2679CF"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/retry_button"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_settings_backup_restore_24"
+            android:tint="#2679CF"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+                android:id="@+id/delete_button"
+                android:visibility="visible"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_delete"
+                android:tint="#2679CF"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relief_popup"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:elevation="2dp"
+            android:background="@drawable/footer"
+            tools:targetApi="lollipop">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginHorizontal="40dp">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Relief"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="16sp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Click on the recorder and let your worries go!"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/popup_skip_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skip"
+                    android:textColor="#646464"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

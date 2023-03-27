@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                                                   android:id="@+id/page_root_view"
+    android:background="@drawable/otp_page_bg"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="32dp">
+
+                <ImageButton
+                    android:id="@+id/login_otp_back_button"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrow_left"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"/>
+
+
+                <TextView
+                    android:id="@+id/otp_verification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/otp_verification_string"
+                    android:textColor="@color/_00_00_color"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/enter_the_otp_sent_to_000_999_4444"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/enter_the_otp_sent_to_000_999_4444_string"
+                    android:textColor="@color/enter_the_otp_sent_to_000_999_4444_color"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:gravity="center"
+                        android:id="@+id/otp1.r"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:background="@drawable/rectangle_175_shape"
+                        android:inputType="number"
+                        android:maxLength="6" />
+-->
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:text="@string/_00_00_string"
+                    android:textColor="@color/_00_00_color"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/resend_otp_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:text="Didn’t you receive the OTP? "
+                    android:textColor="#939393"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/resend_otp_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="RESEND OTP"
+                    android:textColor="@color/_00_00_color"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp" />
+
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/done_otp_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="133dp"
+                    android:layout_marginTop="58dp"
+                    android:backgroundTint="#FF9C27"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:text="Done"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/arial"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

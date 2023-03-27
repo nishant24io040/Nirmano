@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/questionfragmentbg"
+    tools:context=".ClickOnFeeling.ClickOnSad.QuestionSadFragments.sadquestion1">
+
+    <Button
+        android:id="@+id/goback3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/buttonbg"
+        android:text="Go Back"
+        android:textColor="#2679CF"
+        app:layout_constraintBottom_toBottomOf="@+id/btnnext4"
+        app:layout_constraintEnd_toStartOf="@+id/btnnext4"
+        app:layout_constraintTop_toTopOf="@+id/btnnext4" />
+
+    <Button
+        android:id="@+id/btnnext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nextbuttoninactivebg"
+        android:text="Next"
+        android:textColor="#DDDDDD"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/btnnext5"
+        app:layout_constraintStart_toStartOf="@+id/btnnext5"
+        app:layout_constraintTop_toTopOf="@+id/btnnext5"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnnext5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/nextbuttonbg"
+        android:text="Next"
+        android:textColor="#DDDDDD"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Do you experience sadness on a regular basis or just occasionally, and how intense is it?"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:hint="Type here"
+        app:layout_constraintEnd_toEndOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

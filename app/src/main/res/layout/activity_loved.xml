@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7FC"
+    tools:context=".LovedActivity">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/positivebg" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/satisfied"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:background="@drawable/lovedbg"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/attrected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/attrected"
+        app:layout_constraintTop_toTopOf="@+id/attrected">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/satisfied" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="12dp"
+            android:text="Satisfied"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/attrected"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:background="@drawable/lovedbg"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/satisfied"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/longing">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/attrected" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="12dp"
+            android:text="Attracted"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/desire"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:background="@drawable/lovedbg"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/longing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/longing"
+        app:layout_constraintTop_toTopOf="@+id/longing"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/desire" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="12dp"
+            android:text="Desire"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/longing"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:background="@drawable/lovedbg"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/attrected"
+        app:layout_constraintEnd_toStartOf="@+id/desire"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passinate">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/longing" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="12dp"
+            android:text="Longing"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/affectionate"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:background="@drawable/lovedbg"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passinate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passinate"
+        app:layout_constraintTop_toTopOf="@+id/passinate">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/affacinated" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="12dp"
+            android:shadowColor="#000000"
+            android:text="Affectionate"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/passinate"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:background="@drawable/lovedbg"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/longing"
+        app:layout_constraintEnd_toStartOf="@+id/affectionate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peaceful">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/passinate" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="12dp"
+            android:text="Passionate"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/caring"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:background="@drawable/lovedbg"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/peaceful"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/peaceful"
+        app:layout_constraintTop_toTopOf="@+id/peaceful">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/caring" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:shadowColor="#000000"
+            android:text="Caring"
+            android:textColor="#000000"
+            android:paddingStart="12dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/peaceful"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/lovedbg"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/passinate"
+        app:layout_constraintEnd_toStartOf="@+id/caring"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backd">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/peaceful" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="12dp"
+            android:text="Peaceful"
+            android:textColor="#000000" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/backd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/baseline_arrow_back_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/dancing_script"
+        android:gravity="center"
+        android:text="Choose your perfect mood."
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

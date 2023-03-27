@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/page_root_view"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context="com.mental.mentalwellness.developer.nirmano.mentalwellness.cohort">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:elevation="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profile_prof"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constrainedHeight="true"
+                        android:contentDescription="header_background"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/header_cohort"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageButton
+                        android:id="@+id/cohort_back_button"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/arrow_left"
+                        android:scaleType="fitXY"
+                        android:tint="#3B87D6"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginStart="24dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="50dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="120dp"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+
+                    <TextView
+                            android:id="@+id/cohortTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Anxiety Relief"
+                            android:textColor="#000000"
+                            android:textSize="28sp"
+                            android:fontFamily="@font/dancing_script"
+                            android:textStyle="bold"
+                    />
+
+                    <TextView
+                            android:id="@+id/cohort_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12 Jul 2022 | 11:00 A.M."
+                            android:textColor="#000000"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="14sp"
+                    />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                    android:elevation="3dp"
+                    android:id="@+id/cohort_image"
+                    android:layout_width="142dp" android:layout_height="142dp"
+                    android:padding="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-92dp"
+                    android:layout_marginBottom="-52dp"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:background="@drawable/bg_circular"
+                    android:src="@drawable/profile_picture_2"/>
+
+            <LinearLayout
+                    android:elevation="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cohort_card_bg"
+                    android:layout_marginTop="-20dp"
+                    android:paddingHorizontal="24dp"
+                    android:paddingTop="80dp"
+                    android:paddingBottom="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Therapy session by"
+                        android:textColor="#565656"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12sp"
+                />
+
+                <TextView
+                    android:id="@+id/prof_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Dr.Maxwell Steve"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                />
+
+                <TextView
+                        android:id="@+id/prof_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Senior psychologist at KIM institute"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                />
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#ffffff"
+                        android:outlineSpotShadowColor="@android:color/transparent"
+                        app:cardCornerRadius="10dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                                  android:layout_height="wrap_content"
+                                                                  android:padding="15dp"
+                                                                  android:orientation="vertical">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Why you should attend the session :"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="14sp"
+                        />
+
+                        <TextView
+                                android:id="@+id/main_para"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Stress and anxiety can take a toll on both your physical and mental well-being. Fortunately, there are a number of things that you can do on your own to improve your ability to cope with stress. By becoming better at managing your stress, you may also be able to lower your risk for anxiety. "
+                                android:textColor="#636363"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="12sp"
+                        />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#ffffff"
+                        android:outlineSpotShadowColor="@android:color/transparent"
+                        app:cardCornerRadius="10dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                                  android:layout_height="wrap_content"
+                                                                  android:padding="15dp"
+                                                                  android:orientation="vertical">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Topic covered :"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="14sp"
+                        />
+
+                        <TextView
+                                android:id="@+id/topic_cover"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="What is anxiety  | Symptoms | What to do | Exercises | Remedies"
+                                android:textColor="#636363"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="12sp"
+                        />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                        android:id="@+id/session_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Rs. 2000 / Session"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:id="@+id/book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="230dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#FF9C27"
+                        android:outlineSpotShadowColor="@android:color/transparent"
+                        android:text="Book Session"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/arial"
+                        android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

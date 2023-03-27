@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:id="@+id/page_root_view"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   tools:context="com.mental.mentalwellness.developer.nirmano.mentalwellness.feedback">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:id="@+id/close_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:background="@android:color/transparent"
+                    android:padding="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/close_icon"
+                    app:tint="#6F6F6F"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="170dp"
+                        android:minHeight="170dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/feedback" />
+
+                <TextView
+                        android:id="@+id/rating_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Rate your experience with us!"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:layout_gravity="center_horizontal"
+                        android:theme="@style/RatingBar" />
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Which features did you not like?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/low_rating_options"
+                    android:layout_width="342dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:divider="@drawable/empty_divider"
+                    android:showDividers="middle"
+                    android:visibility="gone">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/relief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintEnd_toStartOf="@+id/pricing"
+                        app:layout_constraintStart_toStartOf="@+id/user_exp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/relief_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Relief"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/pricing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/relief"
+                        app:layout_constraintEnd_toStartOf="@+id/services"
+                        app:layout_constraintStart_toEndOf="@+id/relief"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/pricing_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Pricing"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/services"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/pricing"
+                        app:layout_constraintEnd_toEndOf="@+id/group"
+                        app:layout_constraintStart_toEndOf="@+id/pricing"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/services_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Services"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/user_exp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintEnd_toStartOf="@+id/group"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/services"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/user_exp_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="User experience"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/user_exp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/user_exp"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/group_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Group Learning"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/emotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintEnd_toStartOf="@+id/feed"
+                        app:layout_constraintStart_toStartOf="@+id/user_exp"
+                        app:layout_constraintTop_toBottomOf="@+id/group"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/emotion_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Emotion management"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/feed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/emotion"
+                        app:layout_constraintEnd_toEndOf="@+id/group"
+                        app:layout_constraintStart_toEndOf="@+id/emotion"
+                        app:layout_constraintTop_toTopOf="@+id/emotion"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/feed_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Feed"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/high_rating_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:divider="@drawable/empty_divider"
+                    android:showDividers="middle"
+                    android:visibility="gone">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/community"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintEnd_toStartOf="@+id/cwe"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/community_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Community"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cwe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/community"
+                        app:layout_constraintTop_toTopOf="@+id/community"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/cwe_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Chat with expert"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/emotion1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cwe"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/emotion1_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Emotion management courses"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/therapy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintEnd_toStartOf="@+id/mental"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/emotion1"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/therapy_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Therapy"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/mental"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="999dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/therapy"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/therapy"
+                        app:layout_constraintTop_toTopOf="@+id/therapy"
+                        app:strokeColor="#3B87D6"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/mental_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:padding="4dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:text="Mental health products"
+                            android:textAlignment="center"
+                            android:textColor="#5E5E5E"
+                            android:textSize="13sp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Spread the word by rating us on Playstore"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/suggestion_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Any other suggestion?"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/play_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Spread the word by rating us on Playstore"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/plstro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#FF9C27"
+                    android:fontFamily="@font/arial"
+                    android:minWidth="230dp"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:text="Click Here"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/submit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#FF9C27"
+                    android:fontFamily="@font/arial"
+                    android:minWidth="230dp"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:text="Submit"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

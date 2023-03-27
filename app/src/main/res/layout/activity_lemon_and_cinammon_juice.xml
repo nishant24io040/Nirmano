@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+                                                   android:id="@+id/page_root_view"
+    android:layout_height="match_parent"
+    tools:context="com.mental.mentalwellness.developer.nirmano.mentalwellness.lemonAndCinammonJuice">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:fillViewport="true">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:background="#99c4f1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constrainedHeight="true"
+                        android:contentDescription="header_background"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/header_lemon"/>
+
+                <ImageButton
+                        android:id="@+id/lemon_back_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_left"
+                        app:tint="#3B87D6"
+                        android:scaleType="fitXY"
+                        android:background="@android:color/transparent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginStart="25dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical" android:layout_margin="24dp">
+
+                <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lemon and cinnamon juice"
+                        android:textColor="#2679CF"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Step to follow:"
+                        android:textColor="#004082"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"/>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/underline_gradient"
+                           android:scaleType="fitXY"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:id="@+id/bullet1_LL"
+
+                                  android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="●"
+                                android:textColor="#000000"
+                                android:layout_marginHorizontal="5dp"
+                                android:textSize="12sp"/>
+
+                        <TextView
+                                android:id="@+id/bullet1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Breathe in through your nose. As you do it, count to five."
+                                android:textColor="#000000"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:id="@+id/bullet2_LL"
+                                  android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="●"
+                                android:textColor="#000000"
+                                android:layout_marginHorizontal="5dp"
+                                android:textSize="12sp"/>
+
+                        <TextView
+                                android:id="@+id/bullet2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Breathe out through your nose to the count of five."
+                                android:textColor="#000000"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:id="@+id/bullet3_LL"
+                                  android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="●"
+                                android:textColor="#000000"
+                                android:layout_marginHorizontal="5dp"
+                                android:textSize="12sp"/>
+
+                        <TextView
+                                android:id="@+id/bullet3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Repeat several times."
+                                android:textColor="#000000"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="14sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/bullet4_LL"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="●"
+                            android:textColor="#000000"
+                            android:layout_marginHorizontal="5dp"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/bullet4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Repeat several times."
+                            android:textColor="#000000"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/bullet5_LL"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="●"
+                            android:textColor="#000000"
+                            android:layout_marginHorizontal="5dp"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/bullet5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Repeat several times."
+                            android:textColor="#000000"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="How it can help:"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#004082"
+                        android:textSize="14sp"/>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/underline_gradient"
+                           android:scaleType="fitXY"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/outcomes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Breathing techniques help you feel connected to your body—it brings your awareness away from the worries in your head and quiets your mind."
+                            android:textColor="#000000"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/page_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/memory_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/memory_back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrow_left"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="My Memories"
+                android:textColor="@color/_00_00_color"
+                android:textSize="28sp"
+                android:fontFamily="@font/dancing_script"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ScrollView
+            android:id="@+id/memory_middle_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/memory_top_bar"
+            app:layout_constraintBottom_toTopOf="@id/memory_bottom_bar"
+            android:layout_marginVertical="40dp"
+            android:layout_marginHorizontal="24dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="#F0E5D1">
+
+            <LinearLayout
+                    android:id="@+id/toggle_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    android:gravity="end|center_vertical">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:id="@+id/calenderOpen">
+
+                    <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="25 Jun 2022"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="16sp"/>
+
+                    <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ic_calendar"
+                            android:tint="#2679CF"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                    android:id="@+id/memory_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Title"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="#A19F9F"/>
+
+            <EditText
+                    android:id="@+id/descriptioninput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingTop="10dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins"
+                    android:lineHeight="32dp"
+                    android:gravity="top"
+                    android:hint="Description"
+                    android:background="@drawable/memory_edittext_bg"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <codes.side.andcolorpicker.hsl.HSLColorPickerSeekBar
+            android:id="@+id/memory_color_picker"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            app:hslColoringMode="pure"
+            app:hslMode="hue"
+            app:layout_constraintTop_toBottomOf="@id/memory_middle_view"
+            app:layout_constraintBottom_toTopOf="@id/memory_bottom_bar"
+            android:elevation="1dp"/>
+
+    <LinearLayout
+            android:id="@+id/memory_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+            <ImageButton
+                    android:id="@+id/memory_delete_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_memory_delete_button"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:backgroundTint="#3B87D6"
+                android:text="SAVE"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/arial"
+                android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

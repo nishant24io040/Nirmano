@@ -1,0 +1,169 @@
+{
+  "project_info": {
+    "project_number": "70739823494",
+    "project_id": "mentalwellness-7a355",
+    "storage_bucket": "mentalwellness-7a355.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70739823494:android:cd37a69ad8ff4fcab4fa07",
+        "android_client_info": {
+          "package_name": "com.example.mentalwellness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70739823494-8omaas2ptcap6e32151k6jmhmms1ousu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentalwellness",
+            "certificate_hash": "5aad2fddc26bc7da27f44e71ad6e8635b6525055"
+          }
+        },
+        {
+          "client_id": "70739823494-adpg8l1hfipf38l225sdnbungqk0iq7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentalwellness",
+            "certificate_hash": "70977c9adaa2ac69560464780371326be46916e0"
+          }
+        },
+        {
+          "client_id": "70739823494-k3ndev8vdrect9mpnmpb9omi4toqqdt5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentalwellness",
+            "certificate_hash": "3887d68eb299366621c724c20595f06861b4e735"
+          }
+        },
+        {
+          "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzhR3PyEZngdam9PP13akhdC6yajYDqV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70739823494:android:34d4dd0b966491cab4fa07",
+        "android_client_info": {
+          "package_name": "com.mental.mentalwellness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70739823494-7t4uh783e2s6mjm98iomg2fsp9j2it44.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mental.mentalwellness",
+            "certificate_hash": "3887d68eb299366621c724c20595f06861b4e735"
+          }
+        },
+        {
+          "client_id": "70739823494-pleaelll9vtmrn5c5vslml9kp6074bv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mental.mentalwellness",
+            "certificate_hash": "5aad2fddc26bc7da27f44e71ad6e8635b6525055"
+          }
+        },
+        {
+          "client_id": "70739823494-r6kmilfag22pjobo8ds29goevdh26sdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mental.mentalwellness",
+            "certificate_hash": "70977c9adaa2ac69560464780371326be46916e0"
+          }
+        },
+        {
+          "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzhR3PyEZngdam9PP13akhdC6yajYDqV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70739823494:android:8d885a2c274e87ecb4fa07",
+        "android_client_info": {
+          "package_name": "com.nirmano.mentalwellness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70739823494-4qtk7gjtp4nuh7du4bsc2oa7btsolobj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirmano.mentalwellness",
+            "certificate_hash": "5aad2fddc26bc7da27f44e71ad6e8635b6525055"
+          }
+        },
+        {
+          "client_id": "70739823494-q1nrknvb40bkub8ciak5n4omvj4i6mnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirmano.mentalwellness",
+            "certificate_hash": "3887d68eb299366621c724c20595f06861b4e735"
+          }
+        },
+        {
+          "client_id": "70739823494-ud4ni2cui3rnrnfum9sn00lnm0ofos6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirmano.mentalwellness",
+            "certificate_hash": "70977c9adaa2ac69560464780371326be46916e0"
+          }
+        },
+        {
+          "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzhR3PyEZngdam9PP13akhdC6yajYDqV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

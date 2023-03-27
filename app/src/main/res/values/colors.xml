@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 2_welcome_ colors -->
+
+    <color name="colorPrimaryDark">#00574B</color>
+	<color name="colorAccent">#D81B60</color>
+    <color name="purple_500">#FF6200EE</color>
+	<color name="purple_700">#FF3700B3</color>
+	<color name="teal_200">#FF03DAC5</color>
+	<color name="teal_700">#FF018786</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+
+    <color name="by_signing_up__you_agree_to_nirmano_s_terms___conditions_and_privacy_policy_color">#636363</color>
+    <color name="fill">#3B87D6</color>
+	<color name="ratingthums">#ff9c27</color>
+
+    <!--  1_first_screen colors  -->
+
+	<color name="_bg___1_first_screen_color">#3A86D5</color>
+
+
+    <color name="_bg___4__register_color">#ffffff</color>
+	<color name="rectangle_174_color">#FFFDFD</color>
+	<color name="mobile_number_color">#141313</color>
+	<color name="register_color">#3A86D5</color>
+	<color name="already_having_an_account__log_in_color">#000000</color>
+
+	<color name="angry">#FFDFCD</color>
+	<color name="fear">#E9FAE7</color>
+    <color name="_00_00_color">#3A86D5</color>
+
+	<color name="enter_the_otp_sent_to_000_999_4444_color">#3A3A3A</color>
+
+</resources>

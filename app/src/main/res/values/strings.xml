@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 2_welcome_ strings -->
+
+    <string name="app_name" translatable="false">Nirmano</string>
+    <string name="by_signing_up__you_agree_to_nirmano_s_terms___conditions_and_privacy_policy_string" translatable="false">By signing up, you agree to Nirmanos <b>Terms &amp; Conditions and Privacy Policy</b></string>
+
+    <!--  1_first_screen strings  -->
+
+    <string name="nirmano_string" translatable="false">NIRMANO</string>
+    <string name="mobile_number_string" translatable="false">Mobile Number</string>
+    <string name="username_string">Username</string>
+    <string name="get_started_in_few_simple_steps_string">Get started in few simple steps</string>
+    <string name="send_otp_string">Send OTP</string>
+    <string name="default_notification_channel_id">PushNotifications</string>
+    <string name="about">I am a mental health professional with clinical training, and I have a strong passion for research, mentoring, and strength-based approaches to mental health. My quick learning curve, dedication to my clients, and nonjudgmental outlook, in my opinion, will all contribute to my ability to forge effective therapeutic relationships. I am a good listener and I think that compassion and respect are crucial in therapy. Regaining your focus and feeling like your best self is my aim for you! My ability to create a treatment plan that is unique for each client is my main strength.</string>
+    <string name="_00_00_string">00:00</string>
+    <string name="otp_verification_string">OTP VERIFICATION</string>
+    <string name="enter_the_otp_sent_to_000_999_4444_string">Enter the OTP sent to Your Mobile Number</string>
+    <string name="I_agree_to_all_terms_conditions">I agree to all <b>terms &amp; conditions</b></string>
+    <string name="already_have_an_account">Already having an account? <b>Login</b></string>
+    <string name="dont_have_an_account">Don\'t Have An Account? <b>Signup</b></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_with_bullet">
+        &#160;\u2022  Lack of energy \n
+        \u2022  Difficulty concentrating \n
+        \u2022  Not wanting to see people \n
+        \u2022  Feeling sad, low, tearful, guilty or hopeless \n
+        \u2022  Feeling anxious, angry and agitated
+    </string>
+    <string name="angrysecbody"> &#160;\u2022  A churning feeling in your stomach \n
+        \u2022  Tightness in your chest. \n
+        \u2022  An increased and rapid heartbeat. \n
+        \u2022  Legs go weak \n
+        \u2022  Tense muscles \n
+        \u2022   You feel hot
+    </string>
+    <string name="fearsecbody"> &#160;\u2022  Sweating \n
+        \u2022  Trembling \n
+        \u2022  An increased and rapid heartbeat. \n
+        \u2022  Difficulty breathing  \n
+        \u2022  Rapid heartbeat \n
+    </string>
+    <string name="angryfirstbody">When your behavior is not helpful and you frequently experience aggressive thoughts or physical arousal. That does mean you are experiencing anger.</string>
+    <string name="fearfirstbody">Fear is an extremely unpleasant feeling that occurs when a threat or danger is perceived</string>
+    <string name="upset">
+        &#160;\u2022  Sadness \n
+        \u2022  Tearfulness \n
+        \u2022  A sense of emptiness \n
+        \u2022  Angry outbursts \n
+        \u2022  Hopelessness \n
+        \u2022  Frustration \n
+        \u2022  Irritability \n
+    </string>
+    <string name="suffering"> &#160;\u2022  Personality change in a way that seems different for that person  \n
+        \u2022  Agitation or displaying anger, anxiety or moodiness  \n
+        \u2022  Withdrawal or isolation from others Poor self-care and perhaps engaging in risky behavior \n
+        \u2022  Hopelessness, or feelings of being overwhelmed and worthless \n
+    </string>
+    <string name="disappointed"> &#160;\u2022 Greater frequency of headaches  \n
+        \u2022  Gastrointestinal difficulties  \n
+        \u2022  Moist palms and over-perspiration \n
+    </string>
+    <string name="shameful"> &#160;\u2022 Wanting to Disappear  \n
+        \u2022  Self-Blame, Addiction, Anger, disgust embarrassment  \n
+        \u2022  Humiliation \n
+        \u2022  Regret \n
+        \u2022  Remorse  \n
+        \u2022  Self-consciousness \n
+    </string>
+    <string name="negleted"> &#160;\u2022 Difficulties with emotions  \n
+        \u2022  Difficulty with Self Compassion  \n
+        \u2022  Feeling Numb or “Empty” \n
+        \u2022  Difficulty trusting + relying on others \n
+        \u2022  Unrealistic View of Self \n
+        \u2022  Overreacting to conflict \n
+        \u2022  Chronic Self-blame \n
+        \u2022  Self-Doubt \n
+        \u2022  Unhealthy relationships \n
+        \u2022  Easily Triggered \n
+    </string>
+    <string name="dispair"> &#160;\u2022 There is no joy in life  \n
+        \u2022  No passion  \n
+        \u2022  Instead, desperation, anxiety, and hopelessness fill their day \n
+    </string>
+    <string name="rage"> &#160;\u2022 Yelling or shouting.  \n
+        \u2022  Intense anger  \n
+        \u2022  Physical aggression \n
+    </string>
+    <string name="envy"> &#160;\u2022 You aren\'t happy for others when they achieve success  \n
+        \u2022  Another person\'s success makes you feel unhappy  \n
+        \u2022  You feel the need to diminish someone else\'s success \n
+        \u2022  You judge others negatively \n
+        \u2022  You\'re happy when others face setbacks. \n
+    </string>
+    <string name="disgust"> &#160;\u2022 Revulsion in the mouth, throat, and/or stomach \n
+        \u2022 Nausea, or physical repulsion  \n
+    </string>
+    <string name="irritable"> &#160;\u2022 Restlessness  \n
+        \u2022  Difficulty concentrating  \n
+        \u2022  Moodiness — feeling annoyed and grump \n
+        \u2022  Aggression \n
+        \u2022  Agitation \n
+        \u2022  Frustration \n
+    </string>
+    <string name="exaserated"> &#160;\u2022 Crossed Arms  \n
+        \u2022  Looking Anywhere But Directly At You (Especially To The Side)  \n
+        \u2022  They Huff or Sigh A Lot \n
+        \u2022  Short Terse Replies \n
+        \u2022  Interrupting While You Speak \n
+        \u2022  Turning Their Body Away From You. \n
+    </string>
+    <string name="Horror"> &#160;\u2022 Trembling   \n
+        \u2022  Difficulty breathing   \n
+        \u2022  Rapid heartbeat  \n
+        \u2022  Not going to the washroom at night  \n
+        \u2022  Avoiding being alone  \n
+        \u2022  Difficulty sleeping alone \n
+    </string>
+    <string name="Nervous"> &#160;\u2022  Rapid heartbeat    \n
+        \u2022  Trembling  \n
+        \u2022  Feeling weak or tired \n
+        \u2022  Feeling nervous, restless or tensed \n
+    </string>
+    <string name="insecure">&#160;\u2022  Low self-esteem, self-confidence, and self-worth.  \n
+       \u2022 An intense feeling of incompleteness. Generally uncertain about the world.  \n
+    </string>
+    <string name="terror"> &#160;\u2022 A \"racing\" heart   \n
+        \u2022  Feeling weak, faint, or dizzy  \n
+        \u2022  Shaking \n
+        \u2022  Tingling or numbness in the hands and fingers  \n
+        \u2022  Feeling sweaty or having chills \n
+        \u2022  Nausea \n
+    </string>
+    <string name="scared"> &#160;\u2022 Sweating  \n
+        \u2022  Trembling.  \n
+        \u2022  Rapid heartbeat \n
+        \u2022  Feeling unsteady \n
+    </string>
+    <string name="sorrow"> &#160;\u2022 Sadness \n
+        \u2022  Tearfulness  \n
+        \u2022  Angry outbursts  \n
+        \u2022  Hopelessness \n
+        \u2022  Frustration  \n
+        \u2022  Irritability \n
+    </string>
+    <string name="depressed"> &#160;\u2022 Loss of interest or pleasure in things you once enjoyed \n
+        \u2022  Feelings of guilt  \n
+        \u2022  Hopelessness, or worthlessness,   \n
+        \u2022  Decreased energy, fatigue, or feeling slowed down \n
+        \u2022  Difficulty concentrating, remembering, or making decisions  \n
+        \u2022  Trouble sleeping \n
+        \u2022  Changes to appetite or weight. Restlessness or irritability, \n
+    </string>
+    <string name="agony"> &#160;\u2022 Tense body language and restlessness \n
+        \u2022  Strained facial expressions  \n
+        \u2022  Sad facial expressions OR Tearfulness   \n
+        \u2022  Increased resistance/agitation with movement \n
+        \u2022  Increased breathing OR Shortness of breath  \n
+    </string>
+    <string name="hurt"> &#160;\u2022 Loss of interest or pleasure in things you once enjoyed \n
+        \u2022  Feelings of guilt, hopelessness, or worthlessness \n
+        \u2022  Decreased energy, fatigue and feeling low   \n
+        \u2022  Fatigue \n
+        \u2022  Feeling guilty, helpless, or hopeless  \n
+        \u2022  Avoiding family and friends  \n
+    </string>
+    <string name="restful"> &#160;\u2022 Loss of interest or pleasure in things you once enjoyed \n
+        \u2022  Feelings of guilt, hopelessness, or worthlessness  \n
+        \u2022  Decreased energy, fatigue and feeling low   \n
+        \u2022  Difficulty concentrating, remembering \n
+        \u2022  Changes to weight and trouble sleeping  \n
+    </string>
+    <string name="DISPLEASED"> &#160;\u2022 Always complaining \n
+        \u2022  You get angry at petty things  \n
+        \u2022  Often feel lonely   \n
+        \u2022  Hopelessness \n
+        \u2022  Fear grasps your mind  \n
+        \u2022  Decline in health  \n
+        \u2022  You are absent-minded  \n
+    </string>
+    <string name="DISMAYED">&#160;\u2022  You\'re aghast  \n
+        \u2022 Shocked by disappointment \n
+    </string>
+    <string name="GUILTY"> &#160;\u2022 Being sensitive to the effects of every action \n
+        \u2022  Overwhelmed by possibly making the “wrong” decision  \n
+        \u2022  Low self-esteem  \n
+        \u2022  Putting others before yourself until its detrimental \n
+        \u2022  Avoiding your full range of emotions \n
+    </string>
+    <string name="Regretful"> &#160;\u2022 You might feel frustrated \n
+        \u2022  Disappointed with yourself  \n
+        \u2022  Embarrassed or even sad \n
+    </string>
+    <string name="Lonly"> &#160;\u2022 Inability to connect with others on a deeper, more intimate level \n
+        \u2022  No close or \"best\" friends  \n
+        \u2022  An overwhelming feeling of isolation regardless of where you are and who around  \n
+        \u2022  Negative feelings of self-doubt and self-worth \n
+    </string>
+    <string name="Isolated"> &#160;\u2022 Deep boredom \n
+        \u2022  General lack of interest and withdrawal  \n
+        \u2022  Losing interest in personal hygiene   \n
+        \u2022  Poor eating and nutrition  \n
+        \u2022  Significant disrepair, clutter and hoarding in the house  \n
+    </string>
+    <string name="Dread"> &#160;\u2022 Fear of loss and abandonment \n
+        \u2022  Self-doubt  \n
+        \u2022  Meaningless or hopeless thoughts   \n
+        \u2022  Powerless, helpless and feeling trapped  \n
+    </string>
+    <string name="humiliated"> &#160;\u2022 Extremely offended  \n
+        \u2022  Ashamed  \n
+        \u2022  Embarrassed  \n
+    </string>
+    <string name="anxious"> &#160;\u2022 Feeling nervous, restless or tense  \n
+        \u2022  Breathing rapidly (hyperventilation)  \n
+        \u2022  Sweating.  \n
+        \u2022  Trembling  \n
+        \u2022  Feeling weak or tired  \n
+        \u2022  Trouble concentrating or thinking about  anything other than the present worry  \n
+    </string>
+    <string name="worried"> &#160;\u2022 Having a sense of impending danger, panic, or doom \n
+        \u2022  Headache  \n
+        \u2022  Having difficulty concentrating   \n
+        \u2022  Difficulty falling or staying asleep  \n
+    </string>
+    <string name="INCOMPLETE"> &#160;\u2022 Low self-worth \n
+        \u2022  Perception of failure  \n
+        \u2022  Fear of rejection  \n
+        \u2022  The inability to accept praise  \n
+        \u2022  Feelings of powerlessness  \n
+    </string>
+    <string name="INFERIOR"> &#160;\u2022 Insecurity and low self-esteem \n
+        \u2022  Inability to reach your goals, or feeling \"stuck\"Wanting to give up easily.  \n
+        \u2022  Assuming the worst  \n
+        \u2022  Feeling the need to withdraw in social situations  \n
+        \u2022  Often feeling down on yourself. Being sensitive to criticism  \n
+    </string>
+    <string name="Hysterical"> &#160;\u2022 Uncontrolled emotions  \n
+        \u2022  Irrational from fear, emotion, or an emotional shock   \n
+        \u2022  Unrestrained laughter  \n
+    </string>
+    <string name="Panic"> &#160;\u2022 Pounding or racing heart \n
+        \u2022  Sweating  \n
+        \u2022  Shaking or Trembling  \n
+        \u2022  Difficulty breathing  \n
+        \u2022  Weakness or dizziness  \n
+        \u2022  Tingly or numb hands  \n
+        \u2022  Chest pain  \n
+    </string>
+    <string name="Helpless"> &#160;\u2022 Feeling a lack of control over the outcome of situations \n
+        \u2022  Having low self-esteem  \n
+        \u2022  Decreased motivation  \n
+        \u2022 Putting less effort into tasks  \n
+        \u2022  Lack of persistence  \n
+        \u2022  Feelings of frustration  \n
+    </string>
+    <string name="frightended"> &#160;\u2022 Feeling unsteady, dizzy, lightheaded or faint \n
+        \u2022  Feeling like you are choking  \n
+        \u2022  Shortness of breath or a smothering sensation. nausea, vomiting or diarrhea.  \n
+    </string>
+    <string name="Aggraveted"> &#160;\u2022 Emotional distress  \n
+        \u2022  Restlessness  \n
+        \u2022  Tapping  \n
+        \u2022 Starting and ending tasks abruptly  \n
+        \u2022  Fidgeting   \n
+        \u2022  Pacing   \n
+        \u2022  Hand-wringing   \n
+        \u2022  Fast talking   \n
+    </string>
+    <string name="Annoyed"> &#160;\u2022 Their Body Language \n
+        \u2022  They Sigh  \n
+        \u2022  They Interrupt  \n
+        \u2022 They Don\'t \"Hear\" You  \n
+        \u2022  They Appear To Be Zoned Out  \n
+    </string>
+    <string name="Powerless">  &#160;\u2022 Inability to exercise our freewill when it comes to expressing opinions \n
+        \u2022  Making decisions or asserting our personal choices \n
+    </string>
+    <string name="Grief">
+        &#160;\u2022  Motivation and interest may be hard to find \n
+        \u2022  Changes in sleeping patterns  \n
+        \u2022  Insomnia  \n
+        \u2022  Unplanned or unwanted weight loss or gain  \n
+        \u2022  Changes in eating habits  \n
+        \u2022  Temporary loss of interest in things that used   to bring joy   \n
+        \u2022  Sense of loss of control    \n
+    </string>
+    <string name="Jealous"> &#160;\u2022 Accusations, suspicions, questioning your behavior or day-to-day activities \n
+        \u2022  Having negativity towards partners relationships  \n
+        \u2022  Comparing themselves to others  \n
+    </string>
+    <string name="Resentful"> &#160;\u2022 Recurring Negative Feelings  \n
+        \u2022  Inability to Stop Thinking About the Event.  \n
+        \u2022  Feelings of Regret or Remorse  \n
+        \u2022 Fear or Avoidance.  \n
+        \u2022  A Tense Relationship   \n
+    </string>
+    <string name="Revolted"> &#160;\u2022 Prefers being independent and does not like being told what to do  \n
+        \u2022  They would rather give the orders  \n
+        \u2022  Don\'t require a situation be to \'wrong\' or \'boring\' to choose another option or viewpoint; they do so because they feel like it  \n
+        \u2022 Even if the current situation appears perfect to others  \n
+    </string>
+    <string name="Contempt"> &#160;\u2022 So are hostile humor \n
+        \u2022  Name-calling  \n
+        \u2022  Mimicking, and body language such as eye-rolling and sneering  \n
+    </string>
+    <string name="Frustrated"> &#160;\u2022 Get angry Give up or quit Lose self-esteem \n
+        \u2022  Feel a loss of self-confidence  \n
+        \u2022  Experience stress Feel sad, uncertain, depressed or anxious   \n
+        \u2022 Turn to substance abuse  \n
+        \u2022  Engage in other negative, self-destructive or addictive behaviors   \n
+    </string>
+    <string name="Agitated"> &#160;\u2022 An uneasy feeling \n
+        \u2022  An urge to move, maybe with no purpose  \n
+        \u2022  Little patience   \n
+        \u2022 Nervousness  \n
+        \u2022  Stubborn behavior   \n
+        \u2022  Too much excitement   \n
+    </string>
+    <string name="Hostile"> &#160;\u2022 Stubborn \n
+        \u2022  Impatient  \n
+        \u2022  Hotheaded, or have an \"attitude\".  \n
+    </string>
+    <string name="Hate"> &#160;\u2022 Feel envious of or desire the possessions of another \n
+        \u2022  They might believe it is unfair that someone else has what they do not  \n
+        \u2022  Have contempt for or inferiority complexes toward others   \n
+    </string>
+    <string name="suf">The experience of pain or acute distress, either physical or psychological, in response to a physical trauma or a significant event, particularly one that is threatening or involves loss</string>
+    <string name="negle"> A relationship pattern in which an individual\s affectional needs are consistently disregarded, ignored, invalidated, or unappreciated by a significant other</string>
+
+    <string name="terms_and_condition"><b>Introduction</b> -
+\n\n
+These Terms of Service (\"Terms\") govern your access to and use of Nirmano, including any Nirmano mobile applications and websites (the \"Services\"), and information, text, graphics, photos, or other materials uploaded, downloaded or appearing on the Services (collectively referred to as \"Content\"). Your access to and use of the Services is conditioned on your acceptance of and compliance with these Terms. By accessing or using the Services you agree to be bound by these 1) Terms of Services and 2) Privacy Policy. If you do not agree to any of these terms or Privacy Policies, please do not use the Service.
+Although we may attempt to notify you when major changes are made to these Terms of Service, you should periodically review the most up-to-date version on the website of Nirmano. Nirmano, in its sole discretion, may modify or revise these Terms of Service and policies at any time, and you agree to be bound by such modifications or revisions. Nothing in these Terms of Service shall be deemed to confer any third-party rights or benefits.
+\n
+\n
+The mobile application available on Play Store - Nirmano i.e. (\"App\") and the uniform resource locator created for each Merchant (the \'Website\', the \'App\' is collectively hereinafter referred to as the \"Platform\").
+General
+\n\n
+For the purposes of these Terms, \'User\' and wherever the context may require, \'You\' (or any variation thereof), shall mean any natural or legal person (including any legal heirs, administrators or successors) who has agreed to become a user of the Platform by accessing or using the Platform. If You are accepting these Terms and using the Services (as defined below) or the Platform on behalf of a company, organization, government, or other legal entity, You represent and warrant that You are authorized to do so.
+\n\n
+These Terms contain rules, regulations, policies, terms and conditions applicable to any Person who may access or use the Platform, as modified and updated from time to time.
+\n\n
+Please read these Terms carefully before using or registering on the Platform or accessing any information or Services, or posting any information at or through the Platform.
+As a User, the User Agreement shall be effective and binding upon your \'acceptance\'. \'Acceptance\' shall mean Your affirmative action is on entering information as requested on the signup page or simply by accessing or visiting the Platform. If You do not agree or are not willing to be bound by the User Agreement and our Policies(defined below), please do not enter information as requested on the signup. By impliedly or expressly accepting these Terms, You also accept and agree to be bound by applicable policies of the Company including the Privacy Policy
+\n\n
+The content on the Platform is provided for general information only. It is not intended to amount to advice on which you should rely. You must obtain professional or specialist advice before taking, or refraining from taking, any action on the basis of the content on the Platform.
+\n\n
+
+
+<b>Important Notice:</b>
+If You are having suicidal thoughts or planning to act on suicidal thoughts, or if You feel that You may be a danger to Yourself or to others, or if You otherwise have any medical or mental health emergency or severe mental health condition, or if You are in a crisis or trauma or abuse, please discontinue use of the Service immediately and call the relevant emergency number in Your country and notify the police or emergency medical Services.
+\n\n
+If You are less than 18 years of age, please read through the Nirmano Privacy Policy and the Nirmano Terms of Service with Your parent or legal guardian or check with Your Institution to understand eligibility before use. Nirmano is not to be used by children under 16 years.
+\n\n
+Please first consult a healthcare professional before using the App, if You have any of the following conditions- Pregnancy, Sleep Apnea, Restless Leg Syndrome (RLS), Seizures or Epilepsy, hallucinations or nightmares, sleepwalking, excessive daytime sleepiness, dizziness or tremors. The Nirmano App may not be right for You if You are; a child under 16 years, someone with a severe mental or physical condition or disorder, a shift worker, someone who regularly keeps changing sleep schedules, or someone who sleeps at times that are out of sync with Your body\'s natural rhythm.
+\n\n
+We take great pains to keep Your conversations private and secure as outlined in our Privacy Policy.
+\n
+\n
+The App and its services are primarily in the English language.
+\n\n
+
+Your submitted Data will be transferred, stored, and processed in Our secure servers hosted by our cloud service providers. You understand and agree that We may transfer, store and process minimal data outside Your region to enable us to provide Our services. These could be to regions where data protection laws may be less stringent than those in Your country. Such data handling will be based on Our Privacy Policy.
+\n
+\n
+<b>Nirmano License</b>
+Subject to Terms and Conditions, You are hereby granted a non-exclusive, limited, non-transferable, freely revocable license to use the Service for Your personal use only and as permitted by the features of the Service. Nirmano reserves all rights not expressly granted herein in the Service and the Wysa Content (as defined later in this agreement). Nirmano may terminate this license at any time for any reason or no reason.
+\n\n
+
+
+<b>About Nirmano Accounts</b>
+Make the creation of an Account mandatory for all services.
+Your Account will give You access to the Services and functionality that We may establish, modify and maintain from time to time and in our sole discretion.
+When creating Your Account, You must provide accurate and complete Information. If You provide any Information that is untrue, inaccurate, not current or incomplete (or becomes untrue, inaccurate, not current or incomplete), or if We have reasonable grounds to suspect that such Information is untrue, inaccurate, not current or incomplete, We have the right to suspend or terminate Your Account and refuse any and all current or future use of the Service (or any portion thereof).
+You are solely responsible for the activity that occurs on Your Account, and You must keep Your Account password secure. Whenever You need to set a password, We encourage you to use \"strong\" passwords (passwords that use a combination of upper and lower case letters, numbers and symbols) with Your Account. You must notify Nirmano immediately of any breach of security, unauthorised access to Your chats or other data, or unauthorized use of Your Account. Nirmano will not be liable for any losses caused by any unauthorized use of Your Account.
+You may never use another User\'s Account.
+You may control Your user Account profile and how You interact with the Service by changing the Settings in the Mobile Software. You consent to Our using Your profile to send You Service-related email notices, including any notices required by law, in lieu of communication by postal mail.
+\n\n
+
+
+<b>Privacy, Security, Third-Party Links and Monitoring</b>
+We deeply care about the privacy of Our Users. You understand that by using the Services You consent to the collection, use and disclosure of Your Personal data and aggregate data as set forth in our Privacy Policy, and to have Your data collected, used, transferred to and processed by Us in accordance with Our Privacy Policy.
+We deeply care about the integrity and security of Your Personal Data and maintain security measures as required under applicable laws in India and globally to ensure its authorized use. However, we cannot guarantee that unauthorized third parties will never be able to defeat Our security measures or use Your Personal data for improper purposes. You acknowledge that You provide Your Personal data at your own risk.
+The Service may contain links or other content related to third-party websites, advertisers, products and/or services, special offers, or other events or activities offered by third parties that are not owned or controlled by Nirmano. Nirmano has no control over any such links, content, websites, products or services or any Information provided or transmitted via such links, websites, products or services, or otherwise provided by any such third-party. Nirmano does not endorse or assume any responsibility for any such third-party sites, Information, materials, products, opinions or services and will not be responsible or liable for any content, advertising, products or other materials contained therein or the business practices or privacy practices related thereto. If You access a third-party website or application from the Service, You do so at Your own risk, and You understand that this Agreement and Nirmano\'s Privacy Policy do not apply to Your use of such sites. You expressly relieve Nirmano from any and all liability, directly or indirectly, arising from Your use of any third-party website, application, software, service, or content and also for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such link, website, application, software, content, product and/or service. Additionally, Your dealings with or participation in promotions of advertisers found on the Service, including payment and delivery of goods, and any other terms (such as warranties) are solely between You and such advertisers. You agree that Nirmano shall not be responsible for any loss or damage or injury of any sort relating to Your dealings with such advertisers. If You disclose Your Information to others, different rules may apply to their use or disclosure of such Information. We do not control the privacy policies of others. We encourage You to ask questions before You disclose Your personal Information to others. Nirmano encourages You to, at a minimum, be aware when You visit or use a third-party website, application, software or service and to review the terms of service and privacy practices related to such third-party;
+We have the right and liberty to monitor the content on the Website and Mobile Software at all times which shall include Information provided in Your Account or any User Content posted by You. The monitoring of the Website is important to determine the veracity of the Information provided by You and that every User remains in consonance with the Terms and Conditions provided herein. Subject to the Agreement, We shall also have the liberty to remove any objectionable content, including User Content, which is in contravention of the Agreement or share such information with any governmental authority as per procedures laid down by the law for the time being in force in India. It is hereby clarified that Nirmano has a right to but not an obligation to monitor the content on the Website and the Mobile Software. Accordingly, Nirmano shall not be liable for any claims, losses, damages costs or expenses that may arise as a consequence of the User Content published by You or any other User on the Website and Mobile Software.
+Payments and Refunds
+\n\n
+
+By using the platform, the user agrees to pay all applicable fees and charges upfront to Nirmano and also authorises us to automatically deduct all applicable charges and fees from the payments made as and when such features are accessed on our platform. Further, the user agrees to be responsible for any telephone charges and/ or internet service fees that may be incurred in accessing Nirmano Services.
+\n\n
+
+For more information on payment methods, charges and fees, the user shall refer to the Payment section on the platform. Nirmano reserves the right to change any or all parts of the Payment policy without notice or liability to the user or any third party.
+All cancellations and refunds will be handled as per the Cancellation &amp; Refund Policy of the Company. Nirmano reserves the right to change any or all parts of the Cancellation &amp; Refund Policy without notice or liability to the user or any third party.
+\n\n
+
+        <b>Governing Law and Dispute Resolution</b>
+The App is controlled by Nirmano from its office in India, You agree that: (i) Access to, or use of, the App and Services and any related information and materials, may be prohibited by law in certain jurisdictions. You are responsible for compliance with all applicable laws of the jurisdiction from which You are accessing the App and Service. We make no representation that the information contained herein is appropriate or available for use in other locations; (ii) the Service shall be deemed a passive one that does not give rise to personal jurisdiction over Nirmano, either specific or general, in jurisdictions other than Maharashtra, India. This Agreement shall be governed by the internal substantive laws of India, without respect to its conflict of laws principles.You for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of Our copyrights, trademarks, trade secrets, patents, or other intellectual property or proprietary rights. Notwithstanding the foregoing, we reserve the right to bring legal proceedings in any jurisdiction where we believe a breach of this Agreement has originated
+Events beyond our reasonable control
+We will not be held responsible for any delay or failure to comply with Our obligations under this Agreement if the delay or failure arises from any cause which is beyond Our reasonable control. This condition does not affect your statutory rights.
+\n\n
+
+        <b>Updates</b>
+Upbringo reserves the right to update the platform and/ or the Services, in order to, inter alia, increase efficiency, optimize user interface, and add new facilities from time to time. Update packages will be sent to you on your Device for download and installation.
+You hereby agree to install the updates from time to time and acknowledge that Upbringo will only be able to provide Account support for the Services if you ensure to install all updates upon receiving notifications thereof when using the Services.
+\n\n
+
+        <b>Validity of T&amp;C</b>
+These T&amp;Cs shall apply when you complete the authentication process and create an Account and shall remain valid and binding on you for so long as you maintain the Account.
+\n\n
+
+        <b>PRIVACY POLICY</b>
+\n\n
+
+Nirmano  (the \"Company\") is committed to protecting the privacy of its users. This Privacy Policy (\"Privacy Policy\") is designed to help you understand what information we gather, how we use it, what we do to protect it and to assist you in making informed decisions when using our Nirmano Services(as defined in the Terms and Conditions).
+For purposes of this Agreement, the terms \"we,\" \"us,\" and \"our\" refer to the Company. \"You\" refers to you, as a user of the website, application and/or Nirmano Services
+\n\n
+
+        <b>CONSENT</b>
+\n\n
+
+By accessing the Nirmano Application (as defined in the Terms and Conditions), you accept our Privacy Policy and you consent to our collection, storage, and use of your information as described in this Privacy Policy. Each time you visit the Nirmano App, and any time you voluntarily provide us with information, you agree that you are consenting to our collection, use and disclosure of the information that you provide, and you are consenting to receive emails or otherwise be contacted, as described in this Privacy Policy. Whether or not you register an account with the Nirmano App, this Privacy Policy applies to all persons accessing Nirmano.
+\n\n
+
+
+<b>COLLECTION OF INFORMATION</b>
+\n\n
+
+We may collect both \"Non-Personal Information\" and \"Personal Information\" about you. \"Non-Personal Information\" includes information that cannot be used to personally identify you, such as anonymous usage data, general demographic information we may collect, referring/exit pages and URLs, platform types, preferences you submit and preferences that are generated based on the data you submit and number of clicks. \"Personal Information\" includes information that can be used to personally identify you, such as your name, address, age and email address.
+\n\n
+
+<b> Analytics</b>
+\n\n
+
+We may track information regarding your use of the Nirmano Application. We may track information provided to us by your browser, laptop, or mobile devices, such as the referring website from which you came to the Nirmano Application, the type of browser you use, the device from which you connected to the Nirmano Application, the time and date of access, and other information that does not personally identify you. We use this information for various purposes, to improve our Lissun Services, to improve your experience on the Nirmano Application, to understand varied requirements for different users etc.
+\n\n
+
+<b>Telephonic and Email Communications</b>
+\n\n
+
+Based upon the Personal Information that you provide us, we may contact you via a telephone call to understand your requirements in detail and provide further information about our Nirmano Application. By providing your mobile phone number or landline telephone number you are expressly consenting to us contacting you in spite of any registrations you may have with your telecom provider\'s \"Do Not Disturb\" registry. We may also communicate with you via email correspondence.
+We may also use your Personal Information to send you updates and other promotional communications. If you no longer wish to receive email correspondence or updates from us, you may opt-out of receiving them you may contact us and let us know.
+\n\n
+
+
+
+<b>Social Media</b>
+\n\n
+
+We may collect information when you interact with our social media accounts and pages such as LinkedIn, Twitter, Instagram, Facebook etc.
+\n\n
+
+<b>DATA USAGE</b>
+\n\n
+
+We will use the data provided by you to us to provide the Nirmano Services, provide you with information about the Nirmano Services, troubleshoot the Nirmano Platform and diagnose problems and in relation to legitimate business needs functions such as those related to payments or changes in service reducing and addressing instances of fraud and protecting both you and the Company.
+We do not sell, trade, rent or otherwise share your Personal Information with third parties without your consent. We may share your Personal Information with vendors and other third-party providers who are performing Nirmano Services for the Company. In general, the vendors and third-party providers used by us will only collect, use and disclose your information to the extent necessary to allow them to perform the Nirmano services they provide for the Company. These Nirmano Services by such vendors shall include but not be restricted to payment information required by a payment aggregator/gateway to process a payment made for the Nirmano Services,
+Payment aggregators/gateways typically have their own privacy policies in respect of the information that we are required to provide to them in order to use their Nirmano Services and we recommend that you read their privacy policies so that you can understand the way your Personal Information will be handled by such providers.
+We may be required to disclose your Personal Information by law on receipt of a lawful notice from a competent statutory/investigatory authority. Such disclosures will be made in compliance with the applicable law and we will be under no obligation to inform you of such disclosure to the competent authority. We may also be required to disclose your Personal Information to a competent authority if it is found that you have violated our Terms &amp; Conditions and/or have committed an illegal act while using the Nirmano Application and/or Nirmano Services We will use your Non-Personal Information to help us improve the Nirmano Services. We will also aggregate and anonymize Non-Personal Information in order to track usage of the Nirmano Application and Nirmano Services. This Privacy Policy does not limit in any way our use or disclosure of Non-Personal Information and we reserve the right to use and disclose such Non-Personal Information to our partners, advertisers and other third parties at our sole discretion.
+\n\n
+
+<b>PROTECTION OF INFORMATION</b>
+\n\n
+
+We take reasonable precautions to safeguard your Personal Information and ensure that such Personal Information is not illegally or unauthorizedly accessed, sold, disclosed, altered or destroyed. However, these measures do not guarantee that your information will not be illegally or unauthorizedly accessed, disclosed, altered or destroyed by breach of such precautions. By using our website, you acknowledge that you understand and agree to assume these risks.
+\n\n
+
+<b>AGE OF CONSENT</b>
+\n\n
+
+By using the Nirmano, you represent that you are at least 18 years of age or that you have allowed your child to access the Nirmano Services and the same is being done under your supervision and control.
+\n\n
+
+<b>CHANGES TO OUR PRIVACY POLICY</b>
+\n\n
+
+We reserve the right to change this Privacy Policy and our Terms &amp; Conditions at any time. You will be informed of any changes to our Privacy Policy when such changes are effected. Any such changes or updation of the Policy shall be immediately effective upon posting to the Nirmano Service and your continued use is deemed approval of all such changes.
+\n\n
+
+</string>
+    <string name="emptymemory">Oops! \n Your memory box is empty</string>
+</resources>
