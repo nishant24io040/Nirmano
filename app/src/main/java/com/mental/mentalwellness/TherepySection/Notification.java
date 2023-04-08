@@ -9,22 +9,14 @@ import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.mental.mentalwellness.MainActivity;
 import com.mental.mentalwellness.R;
-import com.mental.mentalwellness.Releaf;
-import com.mental.mentalwellness.Tharapytemp;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class Notification extends FirebaseMessagingService {
     @Override

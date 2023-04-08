@@ -15,7 +15,6 @@ import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Le
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Nervous;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Scared;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Terror;
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.SadLevel1;
 import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.BeforeSolution;
 import com.mental.mentalwellness.R;
 

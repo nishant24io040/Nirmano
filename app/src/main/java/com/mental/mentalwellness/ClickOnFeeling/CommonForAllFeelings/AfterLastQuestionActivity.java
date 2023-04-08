@@ -1,11 +1,8 @@
 package com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,12 +15,13 @@ import com.mental.mentalwellness.R;
 public class AfterLastQuestionActivity extends AppCompatActivity {
     public int counter;
     Bundle bundle;
+    CountDownTimer timer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_last_question);
         bundle = getIntent().getExtras();
-        new CountDownTimer(5000, 1000){
+        timer = new CountDownTimer(5000, 1000){
             public void onTick(long millisUntilFinished){
                 counter++;
             }
@@ -65,5 +63,11 @@ public class AfterLastQuestionActivity extends AppCompatActivity {
                 }
             }
         }.start();
+    }
+
+    @Override
+    public void onBackPressed() {
+        timer.cancel();
+        super.onBackPressed();
     }
 }

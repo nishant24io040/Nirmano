@@ -4,16 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.service.chooser.ChooserTarget;
-import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
-import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.ChoosWhatYouEnjoy;
 
 public class EmotionFeedback extends AppCompatActivity {
     ImageView likeinactive,dislikeinactive;
@@ -67,6 +63,8 @@ public class EmotionFeedback extends AppCompatActivity {
     public void onBackPressed() {
         Intent i = new Intent(this, HomePage.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
         startActivity(i);
     }
 }

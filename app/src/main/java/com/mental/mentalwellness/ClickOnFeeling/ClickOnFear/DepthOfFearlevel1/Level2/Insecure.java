@@ -11,11 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.FearLevel1;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Insecurefrag.Incomplete;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Insecurefrag.Inferior;
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Upsetfrag.Depressed;
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Upsetfrag.Sorrow;
 import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.LastActivity;
 import com.mental.mentalwellness.R;
 

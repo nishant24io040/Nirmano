@@ -19,255 +19,255 @@
         android:theme="@style/Theme.MentalWellness">
 
         <service
-            android:name=".TherepySection.Notification"
+            android:name="com.mental.mentalwellness.TherepySection.Notification"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <activity
-            android:name=".TherepySection.BookASlot"
+            android:name="com.mental.mentalwellness.TherepySection.BookASlot"
             android:exported="false" />
         <activity
-            android:name=".TherepySection.profile_page1"
+            android:name="com.mental.mentalwellness.TherepySection.profile_page1"
             android:exported="false" />
         <activity
-            android:name=".TherepySection.MainActivity2"
+            android:name="com.mental.mentalwellness.TherepySection.MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".TherepySection.MainActivity3"
+            android:name="com.mental.mentalwellness.TherepySection.MainActivity3"
             android:exported="false" />
         <activity
-            android:name=".TherepySection.landing_page"
+            android:name="com.mental.mentalwellness.TherepySection.landing_page"
             android:exported="false" />
         <activity
-            android:name=".TherepySection.TherepyActivity"
+            android:name="com.mental.mentalwellness.TherepySection.TherepyActivity"
             android:exported="false" />
         <activity
-            android:name=".Tharapytemp"
+            android:name="com.mental.mentalwellness.Tharapytemp"
             android:exported="false" />
         <activity
-            android:name=".TherapistActivity"
+            android:name="com.mental.mentalwellness.TherapistActivity"
             android:exported="false" />
         <activity
-            android:name=".EditMemory"
+            android:name="com.mental.mentalwellness.EditMemory"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.CommonForAllFeelings.BeforeSolution"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.BeforeSolution"
             android:exported="false" />
         <activity
-            android:name=".DislikedFeedback"
+            android:name="com.mental.mentalwellness.DislikedFeedback"
             android:exported="false" />
         <activity
-            android:name=".StopWatch"
+            android:name="com.mental.mentalwellness.StopWatch"
             android:exported="false" />
         <activity
-            android:name=".LIkedFeedback"
+            android:name="com.mental.mentalwellness.LIkedFeedback"
             android:exported="false" />
         <activity
-            android:name=".EmotionFeedback"
+            android:name="com.mental.mentalwellness.EmotionFeedback"
             android:exported="false" />
         <activity
-            android:name=".SavedMemory"
+            android:name="com.mental.mentalwellness.SavedMemory"
             android:exported="false" />
         <activity
-            android:name=".CreateMemory"
+            android:name="com.mental.mentalwellness.CreateMemory"
             android:exported="false" />
         <activity
-            android:name=".Surprised"
+            android:name="com.mental.mentalwellness.Surprised"
             android:exported="false" />
         <activity
-            android:name=".LovedActivity"
+            android:name="com.mental.mentalwellness.LovedActivity"
             android:exported="false" />
         <activity
-            android:name=".JoyActivity"
+            android:name="com.mental.mentalwellness.JoyActivity"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.CommonForAllFeelings.ChoosWhatYouEnjoy"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.ChoosWhatYouEnjoy"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Horror"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Horror"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Disgust"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Disgust"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Envy"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Envy"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Exasperated"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Exasperated"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Irritable"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Irritable"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Rage"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Rage"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Scared"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Scared"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Nervous"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Nervous"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Insecure"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Insecure"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Terror"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Terror"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Suffring"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Suffring"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.CommonForAllFeelings.LastActivity"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.LastActivity"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Despair"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Despair"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Neglected"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Neglected"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Shameful"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Shameful"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Disappointed"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Disappointed"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Upset"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Upset"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.SadLevel1"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.SadLevel1"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.AngryLevel1"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.AngryLevel1"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.FearLevel1"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.FearLevel1"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnAngry.QuestionAngryActivity"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.QuestionAngryActivity"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnFear.QuestionFearActivity"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.QuestionFearActivity"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.CommonForAllFeelings.AfterLastQuestionActivity"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.AfterLastQuestionActivity"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.ClickOnSad.QuesionsSadActivity"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.QuesionsSadActivity"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.CommonForAllFeelings.ReasonOfFeeling"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.ReasonOfFeeling"
             android:exported="false" />
         <activity
-            android:name=".ClickOnFeeling.CommonForAllFeelings.IfContinueWithFeeling"
+            android:name="com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.IfContinueWithFeeling"
             android:exported="false" />
         <activity
-            android:name=".jogg"
+            android:name="com.mental.mentalwellness.jogg"
             android:exported="false" />
         <activity
-            android:name=".termsAndCondition"
+            android:name="com.mental.mentalwellness.termsAndCondition"
             android:exported="false" />
         <activity
-            android:name=".letter"
+            android:name="com.mental.mentalwellness.letter"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".cohort_feedback"
+            android:name="com.mental.mentalwellness.cohort_feedback"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".addFeed"
+            android:name="com.mental.mentalwellness.addFeed"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".feed"
+            android:name="com.mental.mentalwellness.feed"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".cohort"
+            android:name="com.mental.mentalwellness.cohort"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AddNoteActivity"
+            android:name="com.mental.mentalwellness.AddNoteActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".recordActivity"
+            android:name="com.mental.mentalwellness.recordActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ytEmbbed"
+            android:name="com.mental.mentalwellness.ytEmbbed"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Releaf"
+            android:name="com.mental.mentalwellness.Releaf"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".lemonAndCinammonJuice"
+            android:name="com.mental.mentalwellness.lemonAndCinammonJuice"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".breathInBreathOut"
+            android:name="com.mental.mentalwellness.breathInBreathOut"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".negativeDirectPage"
+            android:name="com.mental.mentalwellness.negativeDirectPage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".feedback"
+            android:name="com.mental.mentalwellness.feedback"
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".editProfile"
+            android:name="com.mental.mentalwellness.editProfile"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".positiveDirectPage"
+            android:name="com.mental.mentalwellness.positiveDirectPage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".OtpVerifyRegister"
+            android:name="com.mental.mentalwellness.OtpVerifyRegister"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HomePage"
+            android:name="com.mental.mentalwellness.HomePage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginViaPhoneNumber"
+            android:name="com.mental.mentalwellness.LoginViaPhoneNumber"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".WelcomePage"
+            android:name="com.mental.mentalwellness.WelcomePage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".OtpVerify"
+            android:name="com.mental.mentalwellness.OtpVerify"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Register"
+            android:name="com.mental.mentalwellness.Register"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Journal"
+            android:name="com.mental.mentalwellness.Journal"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Food_options"
+            android:name="com.mental.mentalwellness.Food_options"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Exercise"
+            android:name="com.mental.mentalwellness.Exercise"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".YoutubeVideo"
+            android:name="com.mental.mentalwellness.YoutubeVideo"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.mental.mentalwellness.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

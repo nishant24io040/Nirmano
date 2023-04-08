@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.mental.mentalwellness.R;
-
 public class TherapistActivity extends AppCompatActivity {
 
     @Override

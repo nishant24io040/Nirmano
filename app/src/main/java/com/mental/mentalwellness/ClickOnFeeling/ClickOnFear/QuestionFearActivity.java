@@ -21,7 +21,6 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.ModalForAngryQuestion;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.QuestionFearFragments.Fearquestion1;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.QuestionFearFragments.Fearquestion2;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.QuestionFearFragments.Fearquestion3;

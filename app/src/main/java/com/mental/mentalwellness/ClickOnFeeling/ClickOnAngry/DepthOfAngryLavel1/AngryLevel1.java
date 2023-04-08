@@ -17,7 +17,6 @@ import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Exasperated;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Irritable;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Rage;
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.FearLevel1;
 import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.BeforeSolution;
 import com.mental.mentalwellness.R;
 

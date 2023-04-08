@@ -134,7 +134,7 @@ public class ReasonOfFeeling extends AppCompatActivity {
             try {
                 if (s.equals("sad")){
                     Intent intent = new Intent(this, QuesionsSadActivity.class);
-//                    intent.putExtra("depth",p);
+                    intent.putExtra("depth",p);
                     startActivity(intent);
                 } else if (s.equals("angry")) {
                     Intent intent = new Intent(this, QuestionAngryActivity.class);

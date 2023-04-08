@@ -6,13 +6,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -29,7 +27,6 @@ import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.QuestionAngryFragme
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.QuestionAngryFragments.Angryquestion4;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.QuestionAngryFragments.Angryquestion5;
 import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.AfterLastQuestionActivity;
-import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.ReasonOfFeeling;
 import com.mental.mentalwellness.R;
 
 

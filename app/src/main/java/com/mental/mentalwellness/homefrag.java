@@ -32,6 +32,11 @@ public class homefrag extends Fragment {
     ImageView blurbg;
     ScrollView mainbg;
 
+    //login problm
+    //mindful problm done
+    //2nd level crash problem done
+    //Memory box edit problems
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -108,9 +113,12 @@ public class homefrag extends Fragment {
             SharedPreferences depth = getContext().getSharedPreferences("datafile",MODE_PRIVATE);
             SharedPreferences.Editor ed = depth.edit();
             ed.putString("feeling","sad");
+            ed.putString("depth","continue");
             ed.commit();
 
             intent.putExtra("feeling","sad");
+            intent.putExtra("depth","continue");
+
             startActivity(intent);
         });
 

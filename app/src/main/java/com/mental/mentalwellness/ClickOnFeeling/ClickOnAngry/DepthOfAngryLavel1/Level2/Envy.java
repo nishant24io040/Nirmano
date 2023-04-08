@@ -13,9 +13,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Envyfrag.Agitated;
 import com.mental.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Envyfrag.Frustrated;
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Nervousfrag.Anxious;
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Nervousfrag.Worried;
-import com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.SadLevel1;
 import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.LastActivity;
 import com.mental.mentalwellness.R;
 

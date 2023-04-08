@@ -19,6 +19,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -41,8 +42,8 @@ public class EditMemory extends AppCompatActivity {
     private DatePickerDialog datePickerDialog;
     private TextView dateButton,back;
     ImageView imgselect;
-    FirebaseAuth mAuth =FirebaseAuth.getInstance();;
-    FirebaseDatabase database =FirebaseDatabase.getInstance();
+    FirebaseAuth mAuth = FirebaseAuth.getInstance();;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
     ConstraintLayout btnimg;
     Uri url;
     Bundle bundle;
@@ -72,6 +73,7 @@ public class EditMemory extends AppCompatActivity {
                 mAuth.getUid(),bundle.getString("feeling"),bundle.getString("key"));
         image = bundle.getString("photo");
         feeling = bundle.getString("emotion");
+        Toast.makeText(this, feeling, Toast.LENGTH_SHORT).show();
         if (image.equals("joy")){
             s ="joy";
         }
@@ -170,6 +172,7 @@ public class EditMemory extends AppCompatActivity {
                             .addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
+                                    Toast.makeText(EditMemory.this, feeling, Toast.LENGTH_SHORT).show();
                                 }
                             });
                 });
@@ -183,12 +186,12 @@ public class EditMemory extends AppCompatActivity {
             Date d= Calendar.getInstance().getTime();
             String url = temp.getImage();
             String title1 =title.getText().toString() ;
-            String body1 =body.getText().toString() ;
+            String body1 =body.getText().toString();
             String date = dateButton.getText().toString();
             String feeling2 = temp.getFeeling() ;
             String Uid = Objects.requireNonNull(mAuth.getCurrentUser().getUid());
             ModalforMemoryBox memory = new ModalforMemoryBox(title1,body1,date,url,Uid,feeling2,temp.getKey());
-            database.getReference().child("Memories").child(Uid).child("loved").child(temp.getKey()).setValue(memory)
+            database.getReference().child("Memories").child(Uid).child(feeling).child(temp.getKey()).setValue(memory)
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void unused) {

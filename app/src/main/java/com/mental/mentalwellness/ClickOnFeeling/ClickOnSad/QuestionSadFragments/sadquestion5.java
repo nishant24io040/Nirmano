@@ -1,9 +1,7 @@
 package com.mental.mentalwellness.ClickOnFeeling.ClickOnSad.QuestionSadFragments;
 
 import static android.content.Context.MODE_PRIVATE;
-import static android.content.Intent.getIntent;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -19,7 +17,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.AfterLastQuestionActivity;
-import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.ReasonOfFeeling;
 import com.mental.mentalwellness.R;
 
 
@@ -101,7 +98,7 @@ public class sadquestion5 extends Fragment {
             String s = depth.getString("depth","");
             intent.putExtra("depth",s);
             intent.putExtra("feeling","sad");
-            Toast.makeText(getContext(), s, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getContext(), s, Toast.LENGTH_SHORT).show();
             startActivity(intent);
         });
 

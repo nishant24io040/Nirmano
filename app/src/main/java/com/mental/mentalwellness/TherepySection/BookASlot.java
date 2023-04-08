@@ -1,14 +1,11 @@
 package com.mental.mentalwellness.TherepySection;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
 import android.widget.CalendarView;
 
 import com.mental.mentalwellness.R;
-
-import java.util.Calendar;
 
 public class BookASlot extends AppCompatActivity {
 

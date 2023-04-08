@@ -11,7 +11,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.Locale;
-import java.util.Timer;
 
 public class StopWatch extends AppCompatActivity {
 

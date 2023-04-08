@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mental.mentalwellness.HomePage;
 import com.mental.mentalwellness.R;
 import com.mental.mentalwellness.Tharapytemp;
 
