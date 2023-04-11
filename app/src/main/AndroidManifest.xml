@@ -19,10 +19,12 @@
         android:theme="@style/Theme.MentalWellness">
 
         <service
-            android:name="com.mental.mentalwellness.TherepySection.Notification"
-            android:exported="true">
+            android:name="com.mental.mentalwellness.TherepySection.SetNotification"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.Send">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.Reciever" />
             </intent-filter>
         </service>
         <activity
@@ -32,7 +34,7 @@
             android:name="com.mental.mentalwellness.TherepySection.profile_page1"
             android:exported="false" />
         <activity
-            android:name="com.mental.mentalwellness.TherepySection.MainActivity2"
+            android:name="com.mental.mentalwellness.TherepySection.BookATharepist"
             android:exported="false" />
         <activity
             android:name="com.mental.mentalwellness.TherepySection.MainActivity3"

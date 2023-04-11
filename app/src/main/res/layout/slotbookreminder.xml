@@ -11,6 +11,19 @@
         android:layout_width="275dp"
         android:layout_height="315dp">
 
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/nextroundedbuttonbg"
+            android:fontFamily="@font/poppins"
+            android:text="Book A Slot"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/button8"
+            app:layout_constraintStart_toStartOf="@+id/button7"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
         <TextView
             android:id="@+id/textView41"
             android:layout_width="wrap_content"
@@ -52,8 +65,7 @@
                 android:id="@+id/imageView53"
                 android:layout_width="109dp"
                 android:layout_height="109dp"
-                android:layout_gravity="center_horizontal"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:src="@drawable/personim"/>
         </androidx.cardview.widget.CardView>
 
         <TextView
@@ -67,28 +79,28 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView18" />
 
         <Button
-            android:id="@+id/resdul"
-            android:layout_width="118dp"
-            android:layout_height="30dp"
-            android:background="@drawable/nextroundedbuttonbg"
-            android:fontFamily="@font/poppins"
-            android:text="Reschedule"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/later"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView41" />
-
-        <Button
-            android:id="@+id/later"
+            android:id="@+id/button7"
             android:layout_width="118dp"
             android:layout_height="30dp"
             android:background="@drawable/bluebordor"
+            android:fontFamily="@font/poppins"
             android:text="Later"
+            android:textColor="#1885F6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bluebordor"
+            android:text="Decline"
             android:textColor="#2196F3"
-            app:layout_constraintBottom_toBottomOf="@+id/resdul"
+            app:layout_constraintBottom_toBottomOf="@+id/button7"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/resdul"
-            app:layout_constraintTop_toTopOf="@+id/resdul" />
+            app:layout_constraintStart_toEndOf="@+id/button7"
+            app:layout_constraintTop_toTopOf="@+id/button7" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

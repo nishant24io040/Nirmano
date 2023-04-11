@@ -22,6 +22,7 @@ import androidx.fragment.app.Fragment;
 import com.google.firebase.database.FirebaseDatabase;
 import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.IfContinueWithFeeling;
 import com.mental.mentalwellness.ClickOnFeeling.CommonForAllFeelings.ReasonOfFeeling;
+import com.mental.mentalwellness.TherepySection.BookASlot;
 
 public class homefrag extends Fragment {
 
@@ -36,7 +37,7 @@ public class homefrag extends Fragment {
     //mindful problm done
     //2nd level crash problem done
     //Memory box edit problems
-
+    Bundle bundle;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -47,9 +48,15 @@ public class homefrag extends Fragment {
         loved = view.findViewById(R.id.loved);
         joy = view.findViewById(R.id.joyful);
         surprised = view.findViewById(R.id.surprised);
+        bundle = getActivity().getIntent().getExtras();
+
 
         blurbg = view.findViewById(R.id.blurbg);
         mainbg = view.findViewById(R.id.scrollView2);
+        SharedPreferences sd = getContext().getSharedPreferences("noti", Context.MODE_PRIVATE);
+        if (sd.getString("yes", "").equals("callme")){
+            slotreminder();
+        }
         sad.setOnClickListener(view1 -> {
             sadfeeling();
         });
@@ -92,6 +99,32 @@ public class homefrag extends Fragment {
         return view;
     }
 
+    private void slotreminder(){
+        Button book,decline,later;
+
+        Dialog dialog = new Dialog(getContext());
+        dialog.setContentView(R.layout.slotbookreminder);
+
+        book = dialog.findViewById(R.id.button9);
+        decline = dialog.findViewById(R.id.button8);
+        later = dialog.findViewById(R.id.button7);
+        dialog.show();
+
+        book.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), BookASlot.class);
+            getContext().startActivity(intent);
+        });
+        decline.setOnClickListener(v -> {
+            SharedPreferences sd = getContext().getSharedPreferences("noti", Context.MODE_PRIVATE);
+            SharedPreferences.Editor ed = sd.edit();
+            ed.remove("yes");
+            ed.commit();
+            dialog.dismiss();
+        });
+        later.setOnClickListener(v -> {
+            dialog.dismiss();
+        });
+    }
     private void sadfeeling(){
 
         Button continueWithFeeling,goInDepth;

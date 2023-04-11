@@ -39,7 +39,7 @@ public class profile_page1 extends AppCompatActivity {
         btn_submit = findViewById(R.id.button_submit);
 
         btn_submit.setOnClickListener(v -> {
-            Intent intent = new Intent(this,MainActivity2.class);
+            Intent intent = new Intent(this, BookATharepist.class);
             startActivity(intent);
         });
         database.getReference("Therapist").child("1")

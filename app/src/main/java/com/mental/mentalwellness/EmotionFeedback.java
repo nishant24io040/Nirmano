@@ -58,7 +58,6 @@ public class EmotionFeedback extends AppCompatActivity {
 
         });
     }
-
     @Override
     public void onBackPressed() {
         Intent i = new Intent(this, HomePage.class);

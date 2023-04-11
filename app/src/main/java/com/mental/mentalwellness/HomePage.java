@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.view.WindowCompat;
@@ -66,7 +68,7 @@ public class HomePage extends AppCompatActivity {
 
     // Main Home Button Ids
     TextView skipBottom;
-    TextView name, accountName ,accountEmail;
+    TextView name, accountName, accountEmail;
     String username;
 
 
@@ -88,9 +90,9 @@ public class HomePage extends AppCompatActivity {
     ImageView homeLPIcon;
 
     //Pop UP ids used  as PU
-    TextView headPU,skip;
+    TextView headPU, skip;
     TextView bodyPU;
-    ConstraintLayout homePopUp,skipb;
+    ConstraintLayout homePopUp, skipb;
 
     //Feeling Buttons as FB
     RecyclerView feelingRecyclerView;
@@ -109,7 +111,7 @@ public class HomePage extends AppCompatActivity {
     List<String> emojiServer;
     ProgressBar progressBar;
 
-    boolean newG,newR;
+    boolean newG, newR;
     Bundle bundle;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -122,9 +124,9 @@ public class HomePage extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         progressBar.setVisibility(View.VISIBLE);
         final String PREFS_NAME = "MyPrefsFile";
-        newG = HomePage.this.getIntent().getBooleanExtra("isNewG",false);
-        newR = HomePage.this.getIntent().getBooleanExtra("new",false);
-        isNew = newG||newR;
+        newG = HomePage.this.getIntent().getBooleanExtra("isNewG", false);
+        newR = HomePage.this.getIntent().getBooleanExtra("new", false);
+        isNew = newG || newR;
         storageReference = FirebaseStorage.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -133,6 +135,10 @@ public class HomePage extends AppCompatActivity {
         profilePhoto = findViewById(R.id.profile_photo_home);
         sidebarProfilePhoto = findViewById(R.id.side_panel_profile);
         getCohortDetails();
+//        SharedPreferences sd = this.getSharedPreferences("noti", Context.MODE_PRIVATE);
+//        if (sd.getString("yes", "").equals("callme")){
+//            Toast.makeText(this, "you are great bro", Toast.LENGTH_SHORT).show();
+//        }
 //try {
 //    db = FirebaseFirestore.getInstance();
 //    emojiServer = new ArrayList<>();
@@ -199,7 +205,7 @@ public class HomePage extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragmentcons,new homefrag());
+        fragmentTransaction.replace(R.id.fragmentcons, new homefrag());
         fragmentManager.popBackStack();
         fragmentTransaction.commit();
 
@@ -208,13 +214,12 @@ public class HomePage extends AppCompatActivity {
         homePopUp.setVisibility(View.GONE);
         skip = findViewById(R.id.skit);
         try {
-            if (bundle.getString("uid").equals("a")){
+            if (bundle.getString("uid").equals("a")) {
                 LP.setVisibility(View.VISIBLE);
-            }
-            else{
+            } else {
                 skipb.setVisibility(View.VISIBLE);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             LP.setVisibility(View.VISIBLE);
         }
 
@@ -232,7 +237,7 @@ public class HomePage extends AppCompatActivity {
         // TODO: get session info from admin panel
 
         try {
-            StorageReference profileRef = storageReference.child("loginUserDetails/" + mAuth.getCurrentUser().getUid()+"/profile.jpg");
+            StorageReference profileRef = storageReference.child("loginUserDetails/" + mAuth.getCurrentUser().getUid() + "/profile.jpg");
             profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override
                 public void onSuccess(Uri uri) {
@@ -249,41 +254,38 @@ public class HomePage extends AppCompatActivity {
                 }
             });
 
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
 
-
         //Firebase auth
 
-        if (user.getDisplayName()!=null && user.getDisplayName().length()>2){
-            name.setText("Hey " + user.getDisplayName()+"," );
+        if (user.getDisplayName() != null && user.getDisplayName().length() > 2) {
+            name.setText("Hey " + user.getDisplayName() + ",");
             accountName.setText(user.getDisplayName());
 
         }
-        if(user.getEmail()!=null&& user.getEmail().length()>2){
+        if (user.getEmail() != null && user.getEmail().length() > 2) {
             accountEmail.setText(user.getEmail());
-        }
-        else{
+        } else {
             this.db = FirebaseFirestore.getInstance();
             assert user.getPhoneNumber() != null;
             db.collection("phoneLoginDetails").document(user.getUid()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                    if (task.isSuccessful()){
+                    if (task.isSuccessful()) {
                         DocumentSnapshot documentSnapshot = task.getResult();
-                        if (documentSnapshot.exists()){
-                            Map<String,Object> map = new HashMap<>();
+                        if (documentSnapshot.exists()) {
+                            Map<String, Object> map = new HashMap<>();
                             map = documentSnapshot.getData();
                             username = String.valueOf(map.get("usernameList"));
-                            name.setText("Hey "+username);
+                            name.setText("Hey " + username);
                             accountName.setText(username);
-                        }
-                        else Toast.makeText(HomePage.this, "Document not exists", Toast.LENGTH_SHORT).show();
-                    }
-                    else Toast.makeText(HomePage.this, "Username Not Found", Toast.LENGTH_SHORT).show();
+                        } else
+                            Toast.makeText(HomePage.this, "Document not exists", Toast.LENGTH_SHORT).show();
+                    } else
+                        Toast.makeText(HomePage.this, "Username Not Found", Toast.LENGTH_SHORT).show();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
@@ -297,7 +299,7 @@ public class HomePage extends AppCompatActivity {
         homeLP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this,HomePage.class);
+                Intent i = new Intent(HomePage.this, HomePage.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -307,42 +309,45 @@ public class HomePage extends AppCompatActivity {
         feedLP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this,feed.class);
+                Intent i = new Intent(HomePage.this, feed.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                i.putExtra("pop",isNew);
+                i.putExtra("pop", isNew);
                 startActivity(i);
             }
         });
         journalLP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this,Journal.class);
+                Intent i = new Intent(HomePage.this, Journal.class);
 //                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 //                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                i.putExtra("pop",isNew);
+                i.putExtra("pop", isNew);
                 startActivity(i);
             }
         });
         reliefLP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomePage.this, Tharapytemp.class);
+//                SharedPreferences sd = getSharedPreferences("noti", Context.MODE_PRIVATE);
+//                SharedPreferences.Editor ed = sd.edit();
+//                ed.remove("yes");
+//                ed.commit();
+                Intent intent = new Intent(HomePage.this, TherepyActivity.class);
                 startActivity(intent);
             }
         });
 
-       // RP set on click listners
+        // RP set on click listners
 //        profilePhoto.setOnClickListener(view -> sidePanel.animate().translationX(0).setDuration(300).start());
-
 
 
         editProfileRP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this,editProfile.class);
+                Intent i = new Intent(HomePage.this, editProfile.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -355,7 +360,7 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                Intent i = new Intent(HomePage.this,WelcomePage.class);
+                Intent i = new Intent(HomePage.this, WelcomePage.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -365,18 +370,18 @@ public class HomePage extends AppCompatActivity {
         termsAndConditionsRP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this,termsAndCondition.class);
+                Intent i = new Intent(HomePage.this, termsAndCondition.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                i.putExtra("bool",false);
+                i.putExtra("bool", false);
                 startActivity(i);
             }
         });
         feedbackRP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomePage.this,feedback.class);
+                Intent i = new Intent(HomePage.this, feedback.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -422,23 +427,12 @@ public class HomePage extends AppCompatActivity {
                     .withEndAction(() -> sidePanelDismiss.setVisibility(View.GONE))
                     .start();
         });
-        FirebaseMessaging.getInstance().subscribeToTopic("weather")
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-//                        String msg = "Subscribed";
-//                        Toast.makeText(HomePage.this, msg, Toast.LENGTH_SHORT).show();
-//                        if (!task.isSuccessful()) {
-//                            msg = "Subscribe failed";
-//                            Toast.makeText(HomePage.this, msg, Toast.LENGTH_SHORT).show();
-//                        }
-                    }
-                });
+        FirebaseMessaging.getInstance().subscribeToTopic("weather");
 
 
     }
 
-    private void setUpNotificationChannel(){
+    private void setUpNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel("200", "General", NotificationManager.IMPORTANCE_DEFAULT);
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
@@ -463,6 +457,16 @@ public class HomePage extends AppCompatActivity {
                     .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
             NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+            if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
             notificationManager.notify(new Random().nextInt(100), builder.build());
         } else{
 

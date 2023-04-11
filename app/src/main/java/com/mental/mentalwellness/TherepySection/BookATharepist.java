@@ -2,25 +2,31 @@ package com.mental.mentalwellness.TherepySection;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.mental.mentalwellness.MainActivity;
 import com.mental.mentalwellness.R;
 
 import java.util.HashMap;
 
 
-public class MainActivity2 extends AppCompatActivity {
+public class BookATharepist extends AppCompatActivity {
 
     private EditText name, phone, age, gender, marital, domilcile, education, occupation, concern;
     TextView tv;
     int b=0;
+    String token;
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -39,7 +45,17 @@ public class MainActivity2 extends AppCompatActivity {
         occupation = findViewById(R.id.Occupation);
         concern = findViewById(R.id.Concerns);
 
-
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(new OnCompleteListener<String>() {
+                    @Override
+                    public void onComplete(Task<String> task) {
+                        if (!task.isSuccessful()) {
+                            Log.w("token", task.getResult().toString(), task.getException());
+                        }
+                        // Get new FCM registration token
+                        token = task.getResult();
+                    }
+                });
         findViewById(R.id.submitButton).setOnClickListener(v -> {
             if (b==0){
                 tv.setText("Confirm you session");
@@ -61,13 +77,12 @@ public class MainActivity2 extends AppCompatActivity {
             }
 
         });
+
     }
 
     private void store(String namee, String phonee, String agee, String genderr, String maritall, String domilcilee, String educationn, String occupationn, String concernn) {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference reference = database.getReference();
-
         HashMap<Object, String> hashMap = new HashMap<>();
         hashMap.put("Name", namee);
         hashMap.put("Mobile Number", phonee);
@@ -77,8 +92,10 @@ public class MainActivity2 extends AppCompatActivity {
         hashMap.put("Education", educationn);
         hashMap.put("Occupation", occupationn);
         hashMap.put("Concern", concernn);
-        reference.child("sessions").child("Information").child(namee+mAuth.getCurrentUser().getUid()).setValue(hashMap);
-        Toast.makeText(this, "Data successfully Stored", Toast.LENGTH_SHORT).show();
+        hashMap.put("token", token);
+        database.getReference().child("sessions").child(mAuth.getCurrentUser().getUid())
+                .child(namee+mAuth.getCurrentUser().getUid()).setValue(hashMap);
+        Toast.makeText(this, "Booked", Toast.LENGTH_SHORT).show();
         finish();
     }
 }
