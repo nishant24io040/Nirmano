@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="5dp"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -47,12 +48,13 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardviewm1"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="170dp"
             android:layout_below="@+id/line"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="13dp"
             android:layout_marginRight="20dp"
             android:elevation="30dp"
+            android:visibility="gone"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="30dp">
 
@@ -62,27 +64,6 @@
                 android:background="@drawable/sessionreminder">
 
                 <Button
-                    android:id="@+id/reschdl"
-                    android:layout_width="157dp"
-                    android:layout_height="40dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/orangeborder"
-                    android:fontFamily="@font/poppins"
-                    android:gravity="center"
-                    android:text="Reschedule"
-                    android:textAlignment="center"
-                    android:textAllCaps="false"
-                    android:textColor="#FF9C27"
-                    android:textSize="18dp"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-                <Button
                     android:id="@+id/button4"
                     android:layout_width="157dp"
                     android:layout_height="40dp"
@@ -90,7 +71,6 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="32dp"
-                    android:layout_marginBottom="9dp"
                     android:background="@drawable/button_view_profile"
                     android:backgroundTint="#FF9C27"
                     android:fontFamily="@font/poppins"
@@ -100,7 +80,6 @@
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    app:layout_constraintBottom_toTopOf="@+id/reschdl"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
@@ -131,7 +110,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview1"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="181dp"
             android:layout_below="@id/cardviewm1"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
@@ -164,11 +143,10 @@
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppins"
                     android:text="Trail therapy for New users at the cheapest price ever and 100+ users have already signed up."
                     android:textColor="#404040"
-                    android:textSize="12dp"
+                    android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/textView22" />
 
@@ -193,8 +171,8 @@
 
                 <Button
                     android:id="@+id/button6"
-                    android:layout_width="157dp"
-                    android:layout_height="40dp"
+                    android:layout_width="118dp"
+                    android:layout_height="27dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/button_view_profile"
@@ -226,123 +204,14 @@
             android:textColor="@color/black"
             android:textSize="19dp" />
 
-        <androidx.cardview.widget.CardView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvt"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="match_parent"
             android:layout_below="@+id/Therapist"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:elevation="30dp"
-            app:cardCornerRadius="20dp">
-
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bluebordor">
-
-                <ImageView
-                    android:id="@+id/profile"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/img_1" />
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/profile"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center">
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="Rs. 800 / "
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/textView"
-                        android:fontFamily="@font/poppins"
-                        android:text="Session"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_toRightOf="@+id/profile"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:text="Dr.Maxwell Steve"
-                        android:textColor="@color/black"
-                        android:textSize="18dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Expect of xxxxxxxxx"
-                        android:textColor="#636363"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Experience"
-                        android:textColor="#636363"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Language"
-                        android:textColor="#636363"
-                        android:textSize="16dp" />
-
-                </LinearLayout>
-
-
-                <Button
-                    android:id="@+id/view_profile"
-                    android:layout_width="157dp"
-                    android:layout_height="40dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginBottom="15dp"
-                    android:background="@drawable/button_view_profile"
-                    android:fontFamily="@font/poppins"
-                    android:gravity="center"
-                    android:text="VIEW PROFILE"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="18dp" />
-
-
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp" />
 
     </RelativeLayout>
 

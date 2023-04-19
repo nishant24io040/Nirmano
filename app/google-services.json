@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "70739823494",
+    "firebase_url": "https://mentalwellness-7a355-default-rtdb.firebaseio.com",
     "project_id": "mentalwellness-7a355",
     "storage_bucket": "mentalwellness-7a355.appspot.com"
   },
@@ -38,6 +39,22 @@
           }
         },
         {
+          "client_id": "70739823494-s1cq57sg0skp1ckv3rtqfs3ic9a33atm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentalwellness",
+            "certificate_hash": "89f29599b94ee7ed0aad9614930318b4d14d61f0"
+          }
+        },
+        {
+          "client_id": "70739823494-u068kbh38lf77qjnm9i357t8isbr096m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentalwellness",
+            "certificate_hash": "724932c88c2cc4c073fd87e0a81791ac16f0c291"
+          }
+        },
+        {
           "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -67,11 +84,35 @@
       },
       "oauth_client": [
         {
+          "client_id": "70739823494-4slr7jj9hpi4f7ouo94q1sfphku1pees.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mental.mentalwellness",
+            "certificate_hash": "c9f1bf2f33fc13d0ffc589b977e94eaaa3844fe1"
+          }
+        },
+        {
           "client_id": "70739823494-7t4uh783e2s6mjm98iomg2fsp9j2it44.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.mental.mentalwellness",
             "certificate_hash": "3887d68eb299366621c724c20595f06861b4e735"
+          }
+        },
+        {
+          "client_id": "70739823494-epan66gi0ku9s6870kugha66ajfm3kbn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mental.mentalwellness",
+            "certificate_hash": "b48670178a89028ad64d32e682624ded19e3b930"
+          }
+        },
+        {
+          "client_id": "70739823494-ihg1dittk0u19frssoq7ch3e0q7algvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mental.mentalwellness",
+            "certificate_hash": "89f29599b94ee7ed0aad9614930318b4d14d61f0"
           }
         },
         {
@@ -88,6 +129,75 @@
           "android_info": {
             "package_name": "com.mental.mentalwellness",
             "certificate_hash": "70977c9adaa2ac69560464780371326be46916e0"
+          }
+        },
+        {
+          "client_id": "70739823494-rl8kh8pigeuks4mhkespvm797dphd18j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mental.mentalwellness",
+            "certificate_hash": "724932c88c2cc4c073fd87e0a81791ac16f0c291"
+          }
+        },
+        {
+          "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzhR3PyEZngdam9PP13akhdC6yajYDqV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70739823494:android:b33e04c4982325f3b4fa07",
+        "android_client_info": {
+          "package_name": "com.nirman.mentalwellness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70739823494-4468k2d5vvailvs5q3fqh81ro3iacj0b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirman.mentalwellness",
+            "certificate_hash": "89f29599b94ee7ed0aad9614930318b4d14d61f0"
+          }
+        },
+        {
+          "client_id": "70739823494-4do623u3gm8moamqntmonl2h7ujjgji6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirman.mentalwellness",
+            "certificate_hash": "7d10cf8e5d0479a8f37049da1d625a48753ce06f"
+          }
+        },
+        {
+          "client_id": "70739823494-73fi5iks88s9dv0mv7ano4pmeqn4hchb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirman.mentalwellness",
+            "certificate_hash": "56ddf5ecfc2bcf5ea49124a1bbaf694e1d61c4bf"
+          }
+        },
+        {
+          "client_id": "70739823494-qd66u3sh5pslugk8hj9raq2u7q5a5sko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirman.mentalwellness",
+            "certificate_hash": "724932c88c2cc4c073fd87e0a81791ac16f0c291"
           }
         },
         {
@@ -128,6 +238,14 @@
           }
         },
         {
+          "client_id": "70739823494-9rjouc2kpv5juaga29brehh8c4cr1e3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirmano.mentalwellness",
+            "certificate_hash": "724932c88c2cc4c073fd87e0a81791ac16f0c291"
+          }
+        },
+        {
           "client_id": "70739823494-q1nrknvb40bkub8ciak5n4omvj4i6mnh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -141,6 +259,14 @@
           "android_info": {
             "package_name": "com.nirmano.mentalwellness",
             "certificate_hash": "70977c9adaa2ac69560464780371326be46916e0"
+          }
+        },
+        {
+          "client_id": "70739823494-uf6qckqd7bi1ne5fqusjgtg6505vff5d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nirmano.mentalwellness",
+            "certificate_hash": "89f29599b94ee7ed0aad9614930318b4d14d61f0"
           }
         },
         {

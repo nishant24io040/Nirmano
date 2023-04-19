@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mental.mentalwellness.developer.nirmano.mentalwellness.termsAndCondition">
+    tools:context="com.nirman.mentalwellness.developer.nirmano.mentalwellness.termsAndCondition">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
