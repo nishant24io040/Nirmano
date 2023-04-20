@@ -5,7 +5,7 @@
                                                    xmlns:tools="http://schemas.android.com/tools"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
-                                                   tools:context="com.nirman.mentalwellness.developer.nirmano.mentalwellness.cohort">
+                                                   tools:context="com.ansrnirmano.mentalwellness.developer.nirmano.mentalwellness.cohort">
 
     <ScrollView
             android:layout_width="match_parent"

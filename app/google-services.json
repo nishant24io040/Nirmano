@@ -8,6 +8,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:70739823494:android:c342d0285ebe9e8fb4fa07",
+        "android_client_info": {
+          "package_name": "com.ansrnirmano.mentalwellness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70739823494-b7vemnfvvhmt6uuhj5c5c29afeoieeht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ansrnirmano.mentalwellness",
+            "certificate_hash": "89f29599b94ee7ed0aad9614930318b4d14d61f0"
+          }
+        },
+        {
+          "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzhR3PyEZngdam9PP13akhdC6yajYDqV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70739823494-ad9n12h2qu0h3nvkq1u0denqmc62pfsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:70739823494:android:cd37a69ad8ff4fcab4fa07",
         "android_client_info": {
           "package_name": "com.example.mentalwellness"

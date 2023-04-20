@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/page_root_view"
-        tools:context="com.nirman.mentalwellness.developer.nirmano.mentalwellness.positiveDirectPage"
+        tools:context="com.ansrnirmano.mentalwellness.developer.nirmano.mentalwellness.positiveDirectPage"
         android:background="#A3C4E7">
 
     <ImageView
