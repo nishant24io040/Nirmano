@@ -1,7 +1,7 @@
 package com.ansrnirmano.mentalwellness;
 
 public class TempModal {
-    String label,title1,title2,content1,content2,duration;
+    private String label,title1,title2,content1,content2,duration;
 
     public TempModal() {
     }

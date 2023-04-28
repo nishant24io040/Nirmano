@@ -3,8 +3,7 @@ package com.ansrnirmano.mentalwellness;
 public class ModalforMemoryBox {
     private String title,body,date,image,uid,feeling,key;
 
-    public ModalforMemoryBox() {
-    }
+
 
     public ModalforMemoryBox(String title, String body, String date, String image, String uid,String feeling,String key) {
         this.title = title;
@@ -15,7 +14,8 @@ public class ModalforMemoryBox {
         this.feeling = feeling;
         this.key = key;
     }
-
+    public ModalforMemoryBox() {
+    }
     public String getKey() {
         return key;
     }

@@ -335,7 +335,7 @@ public class HomePage extends AppCompatActivity {
 //                SharedPreferences.Editor ed = sd.edit();
 //                ed.remove("yes");
 //                ed.commit();
-                Intent intent = new Intent(HomePage.this, Tharapytemp.class);
+                Intent intent = new Intent(HomePage.this, TherepyActivity.class);
                 startActivity(intent);
             }
         });

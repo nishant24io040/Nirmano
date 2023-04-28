@@ -43,7 +43,7 @@ public class LovedFragment extends Fragment {
         adapter = new MemoryAdapter(getContext(),list,2);
         rcview.setAdapter(adapter);
 
-        database.getReference().child("Memories").child(mAuth.getUid()).child("loved").orderByChild("timestamp")
+        database.getReference().child("Memories").child(mAuth.getUid()).child("loved")
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -52,7 +52,6 @@ public class LovedFragment extends Fragment {
                             for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                                 ModalforMemoryBox user2 = dataSnapshot.getValue(ModalforMemoryBox.class);
                                 list.add(user2);
-                                Collections.reverse(list);
                             }
                             adapter.notifyDataSetChanged();
                         }

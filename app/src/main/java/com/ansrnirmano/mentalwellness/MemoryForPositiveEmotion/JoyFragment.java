@@ -51,7 +51,6 @@ public class JoyFragment extends Fragment {
                     for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                         ModalforMemoryBox user2 = dataSnapshot.getValue(ModalforMemoryBox.class);
                         list.add(user2);
-                        Collections.reverse(list);
                     }
                     adapter.notifyDataSetChanged();
                 }

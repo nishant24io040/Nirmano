@@ -64,7 +64,7 @@
                 android:background="@drawable/sessionreminder">
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/joinit"
                     android:layout_width="157dp"
                     android:layout_height="40dp"
                     android:layout_alignParentStart="true"

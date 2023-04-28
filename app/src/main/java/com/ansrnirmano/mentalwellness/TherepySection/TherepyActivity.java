@@ -4,9 +4,11 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,11 +25,12 @@ import com.google.firebase.database.ValueEventListener;
 
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class TherepyActivity extends AppCompatActivity {
 
 
-    Button reschedule;
+    Button joinmeet;
     CardView upsession;
     RecyclerView rcv;
     TharepistAdapter adapter;
@@ -39,6 +42,7 @@ public class TherepyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_therepy);
         upsession = findViewById(R.id.cardviewm1);
+        joinmeet = findViewById(R.id.joinit);
         list = new ArrayList<>();
         rcv = findViewById(R.id.rcvt);
         rcv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
@@ -49,6 +53,27 @@ public class TherepyActivity extends AppCompatActivity {
         if (sd.getString("payment", "").equals("complete")){
             upsession.setVisibility(View.VISIBLE);
         }
+        joinmeet.setOnClickListener(v -> {
+            database.getReference("UpcomingSession").child(mAuth.getCurrentUser().getUid()).child("link")
+                    .addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    String s = snapshot.getValue(String.class);
+                    Uri uri = Uri.parse(s);
+                    if (!Objects.equals(s, "")){
+                        startActivity(new Intent(Intent.ACTION_VIEW,uri));
+                    }
+                    else {
+                        Toast.makeText(TherepyActivity.this, "Admin will provide link", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+        });
         database.getReference().child("Therapist").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

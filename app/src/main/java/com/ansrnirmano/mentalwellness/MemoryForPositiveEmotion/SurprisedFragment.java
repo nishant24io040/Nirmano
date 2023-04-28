@@ -23,7 +23,7 @@ import com.ansrnirmano.mentalwellness.R;
 import java.util.ArrayList;
 
 
-public class SurprisedFragment extends Fragment {
+public class     SurprisedFragment extends Fragment {
     View view;
     RecyclerView rcview;
     ArrayList<ModalforMemoryBox> list;
@@ -46,6 +46,7 @@ public class SurprisedFragment extends Fragment {
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+
                         if(snapshot.exists()){
                             list.clear();
                             for (DataSnapshot dataSnapshot : snapshot.getChildren()){

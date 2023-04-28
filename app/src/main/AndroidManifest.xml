@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ansrnirmano.mentalwellness">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
 
     <application
         android:allowBackup="true"
@@ -17,9 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MentalWellness">
+        <activity
+            android:name=".HobbyDevelopment.HobbyDevelopment"
+            android:exported="false" />
 
         <service
-            android:name="com.ansrnirmano.mentalwellness.TherepySection.SetNotification"
+            android:name=".TherepySection.SetNotification"
             android:exported="false"
             android:permission="com.google.android.c2dm.permission.Send">
             <intent-filter>
@@ -27,249 +28,250 @@
                 <action android:name="com.google.android.c2dm.intent.Reciever" />
             </intent-filter>
         </service>
+
         <activity
-            android:name="com.ansrnirmano.mentalwellness.TherepySection.BookASlot"
+            android:name=".TherepySection.BookASlot"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.TherepySection.profile_page1"
+            android:name=".TherepySection.profile_page1"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.TherepySection.BookATharepist"
+            android:name=".TherepySection.BookATharepist"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.TherepySection.MainActivity3"
+            android:name=".TherepySection.MainActivity3"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.TherepySection.landing_page"
+            android:name=".TherepySection.landing_page"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.TherepySection.TherepyActivity"
+            android:name=".TherepySection.TherepyActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.Tharapytemp"
+            android:name=".Tharapytemp"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.TherapistActivity"
+            android:name=".TherapistActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.EditMemory"
+            android:name=".EditMemory"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.CommonForAllFeelings.BeforeSolution"
+            android:name=".ClickOnFeeling.CommonForAllFeelings.BeforeSolution"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.DislikedFeedback"
+            android:name=".DislikedFeedback"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.StopWatch"
+            android:name=".StopWatch"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.LIkedFeedback"
+            android:name=".LIkedFeedback"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.EmotionFeedback"
+            android:name=".EmotionFeedback"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.SavedMemory"
+            android:name=".SavedMemory"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.CreateMemory"
+            android:name=".CreateMemory"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.Surprised"
+            android:name=".Surprised"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.LovedActivity"
+            android:name=".LovedActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.JoyActivity"
+            android:name=".JoyActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.CommonForAllFeelings.ChoosWhatYouEnjoy"
+            android:name=".ClickOnFeeling.CommonForAllFeelings.ChoosWhatYouEnjoy"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Horror"
+            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Horror"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Disgust"
+            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Disgust"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Envy"
+            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Envy"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Exasperated"
+            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Exasperated"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Irritable"
+            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Irritable"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Rage"
+            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.Level2.Rage"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Scared"
+            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Scared"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Nervous"
+            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Nervous"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Insecure"
+            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Insecure"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Terror"
+            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.Level2.Terror"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Suffring"
+            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Suffring"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.CommonForAllFeelings.LastActivity"
+            android:name=".ClickOnFeeling.CommonForAllFeelings.LastActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Despair"
+            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Despair"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Neglected"
+            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Neglected"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Shameful"
+            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Shameful"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Disappointed"
+            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Disappointed"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Upset"
+            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.Level2.Upset"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.SadLevel1"
+            android:name=".ClickOnFeeling.ClickOnSad.DepthOfEmotionLevel1.SadLevel1"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.AngryLevel1"
+            android:name=".ClickOnFeeling.ClickOnAngry.DepthOfAngryLavel1.AngryLevel1"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.FearLevel1"
+            android:name=".ClickOnFeeling.ClickOnFear.DepthOfFearlevel1.FearLevel1"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnAngry.QuestionAngryActivity"
+            android:name=".ClickOnFeeling.ClickOnAngry.QuestionAngryActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnFear.QuestionFearActivity"
+            android:name=".ClickOnFeeling.ClickOnFear.QuestionFearActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.CommonForAllFeelings.AfterLastQuestionActivity"
+            android:name=".ClickOnFeeling.CommonForAllFeelings.AfterLastQuestionActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.ClickOnSad.QuesionsSadActivity"
+            android:name=".ClickOnFeeling.ClickOnSad.QuesionsSadActivity"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.CommonForAllFeelings.ReasonOfFeeling"
+            android:name=".ClickOnFeeling.CommonForAllFeelings.ReasonOfFeeling"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ClickOnFeeling.CommonForAllFeelings.IfContinueWithFeeling"
+            android:name=".ClickOnFeeling.CommonForAllFeelings.IfContinueWithFeeling"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.jogg"
+            android:name=".jogg"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.termsAndCondition"
+            android:name=".termsAndCondition"
             android:exported="false" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.letter"
+            android:name=".letter"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.cohort_feedback"
+            android:name=".cohort_feedback"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.addFeed"
+            android:name=".addFeed"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.feed"
+            android:name=".feed"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.cohort"
+            android:name=".cohort"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.AddNoteActivity"
+            android:name=".AddNoteActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.recordActivity"
+            android:name=".recordActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.ytEmbbed"
+            android:name=".ytEmbbed"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.Releaf"
+            android:name=".Releaf"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.lemonAndCinammonJuice"
+            android:name=".lemonAndCinammonJuice"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.breathInBreathOut"
+            android:name=".breathInBreathOut"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.negativeDirectPage"
+            android:name=".negativeDirectPage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.feedback"
+            android:name=".feedback"
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.editProfile"
+            android:name=".editProfile"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.positiveDirectPage"
+            android:name=".positiveDirectPage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.OtpVerifyRegister"
+            android:name=".OtpVerifyRegister"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.HomePage"
+            android:name=".HomePage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.LoginViaPhoneNumber"
+            android:name=".LoginViaPhoneNumber"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.WelcomePage"
+            android:name=".WelcomePage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.OtpVerify"
+            android:name=".OtpVerify"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.Register"
+            android:name=".Register"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.Journal"
+            android:name=".Journal"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.Food_options"
+            android:name=".Food_options"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.Exercise"
+            android:name=".Exercise"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.YoutubeVideo"
+            android:name=".YoutubeVideo"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ansrnirmano.mentalwellness.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
